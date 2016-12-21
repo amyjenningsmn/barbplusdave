@@ -1,0 +1,37 @@
+/*
+ Theme Name:   Edge Child
+ Theme URI:    https://themefreesia.com/themes/edge
+ Description:  Edge Child Theme - Edge
+ Author:       Amy Jennings
+ Author URI:   http://amyjenningsdev.com
+ Template:     edge
+ Version:      1.1.1.1
+ Tags:         from edge: threaded-comments, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, sticky-post, theme-options, translation-ready, post-formats, custom-logo, footer-widgets, blog, e-commerce, news, photography, portfolio
+ Text Domain:  edge-child
+*/
+
+@import url("../edge/style.css");
+
+/* General Styles
+================================================== */
+
+body {
+	background: pink;
+}
+
+/*  #Main Slider Override Styles
+================================================== */
+
+
+.slider-content .slider-title,
+.slider-content .slider-title a {
+	display: none;
+}
+.slider-content .slider-text h3 {
+	display: none;
+}
+
+/* ----- Slider Buttons ----- */
+a.slider-prev, a.slider-next {
+	display: none;
+}
