@@ -16,7 +16,7 @@ function create_custom_post_types() {
             'has_archive' => true,
             // ^^ because we want it to have an archive
             'rewrite' => array( 'slug' => 'listings' ),
-            // ^^ name used in the URLs for your case study posts. They will look something like this: http://localhost:8888/barbplusdave/listings/something-something/
+            // ^^ name used in the URLs for listings posts. They will look something like this: http://localhost:8888/barbplusdave/listings/something-something/
         )
     );
 }
