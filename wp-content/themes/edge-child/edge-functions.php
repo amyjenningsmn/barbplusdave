@@ -129,6 +129,10 @@ function edge_social_links() { ?>
 		if( !empty($edge_settings['edge_social_linkedin']) ):
 			echo '<a target="_blank" href="'.esc_url($edge_settings['edge_social_linkedin']).'"><i class="fa fa-linkedin"></i></a>';
 		endif;
+		// add email to .social-links
+		if( !empty($edge_settings['edge_social_email']) ):
+			echo '<a target="_blank" href="'.esc_url($edge_settings['edge_social_email']).'"><i class="fa fa-envelope-o"></i></a>';
+		endif;
 		if(class_exists('Edge_Plus_Features')){
 			do_action ('social_Plus_links');
 		}

@@ -107,7 +107,7 @@ if(is_front_page()){
 }
 if(!is_home()){?>
 	<div class="page-header">
-		<h1 class="page-title"><?php echo edge_header_title(); ?></h1>
+		<!-- <h1 class="page-title"><?php echo edge_header_title(); ?></h1> -->
 		<!-- .page-title -->
 		<?php edge_breadcrumb(); ?>
 		<!-- .breadcrumb -->

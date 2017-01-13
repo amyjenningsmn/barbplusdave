@@ -25,8 +25,6 @@
         $mls_number = get_field('mls_number');
      ?>
 
-     <!-- Left off here - need to address the rest -->
-
       <article class="listing">
 
         <div class="listing-images">

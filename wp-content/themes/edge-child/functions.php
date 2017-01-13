@@ -1,6 +1,6 @@
 <?php
 
-
+/********************* Create Custom Post Types ***********************************/
 function create_custom_post_types() {
     register_post_type( 'listings',
     // ^^ unique name
@@ -25,5 +25,9 @@ add_action( 'init', 'create_custom_post_types' );
 // note: sometimes this doesn't work, and to fix it, The easiest way to fix this is to have WordPress reset the permalinks. So, I will go to the Settings menu and click on Permalinks.
 // I will then change the permalinks setting from Day and Name to Month and Name, although it really doesn’t matter which one I choose.
 // I will then hit Save Changes, and then I will go back to my test case study and hit refresh. And, sure enough, there it is.
+
+
+
+// Need to add .social-link override functions here (from edge-functions.php and social-icons.php.  Good article for how to do that: https://code.tutsplus.com/tutorials/a-guide-to-overriding-parent-theme-functions-in-your-child-theme--cms-22623)
 
 ?>

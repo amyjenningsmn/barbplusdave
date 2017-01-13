@@ -19,6 +19,15 @@ body {
 	background: pink;
 }
 
+/*  #Header Override Styles
+================================================== */
+
+.top-header .widget-title {
+    display: block;
+		padding-bottom: 0;
+		text-align: left;
+}
+
 /*  #Main Slider Override Styles
 ================================================== */
 
@@ -32,6 +41,30 @@ body {
 }
 
 /* ----- Slider Buttons ----- */
+
+/* Overriding all for now, may need to adjust if use slider in other parts of site */
+
+/* Can access slider functions in inc/settings/edge-functions.php */
+
+div.slider-buttons {
+	display: none;
+}
+
 a.slider-prev, a.slider-next {
 	display: none;
+}
+
+/* Home Page Styles */
+
+.one-column {
+	background-color: cyan;
+}
+
+.three-column {
+	background-color: pink;
+}
+
+.two-column, .two-column-full-width {
+    width: 60%;
+		background-color: tomato;
 }

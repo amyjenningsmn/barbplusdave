@@ -125,6 +125,19 @@ $wp_customize->add_control( 'edge_theme_options[edge_social_linkedin]', array(
 	'type' => 'text',
 	)
 );
-
-
+// add email to .social-links
+$wp_customize->add_setting( 'edge_theme_options[edge_social_email]', array(
+	'default' => $edge_settings['edge_social_email'],
+	'sanitize_callback' => 'esc_url_raw',
+	'type' => 'option',
+	'capability' => 'manage_options'
+	)
+);
+$wp_customize->add_control( 'edge_theme_options[edge_social_email]', array(
+	'priority' => 490,
+	'label' => __( 'Email Link', 'edge' ),
+	'section' => 'edge_social_icons',
+	'type' => 'text',
+	)
+);
 	?>
