@@ -30,4 +30,8 @@ add_action( 'init', 'create_custom_post_types' );
 
 // Need to add .social-link override functions here (from edge-functions.php and social-icons.php.  Good article for how to do that: https://code.tutsplus.com/tutorials/a-guide-to-overriding-parent-theme-functions-in-your-child-theme--cms-22623)
 
+// Add Arsenal + Open Sans Google fonts - need to fix this - not doing this correctly even though it's working
+	// wp_enqueue_style( 'barbplusdave-google-font', 'https://fonts.googleapis.com/css?family=Arsenal|Open+Sans" rel="stylesheet');
+
+
 ?>

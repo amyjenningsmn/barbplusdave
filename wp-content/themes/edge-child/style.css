@@ -19,6 +19,12 @@ body {
 	background: pink;
 }
 
+/*h1, h2, h3, h4, h5, h6 {
+	font-family: 'Arsenal', sans-serif;
+}*/
+
+
+
 /*  #Header Override Styles
 ================================================== */
 
@@ -60,11 +66,15 @@ a.slider-prev, a.slider-next {
 	background-color: cyan;
 }
 
-.three-column {
+/*.three-column {
 	background-color: pink;
-}
+}*/
 
 .two-column, .two-column-full-width {
     width: 60%;
 		background-color: tomato;
+}
+
+.copyright {
+	clear: both;
 }
