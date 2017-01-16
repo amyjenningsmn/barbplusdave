@@ -28,10 +28,27 @@ get_header();
 	}?>
 	<!-- <main id="main"> -->
     <section id="get-to-know">
-      <div class="one-column entry-content clearfix">
-        <h2>This is the "Get to Know Us" Section</h2>
-        <p>
-          Here's where we'll insert the Warm Cool Calm Connected graphic from Lucy. Also the icons, and text. Will there also be words underneath? I'll mess around with it. I can make a div with the .four-column class and make that work for the icons hopefully.   </p>
+      <div class="one-column clearfix">
+				<div>
+					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/love.png" />
+				</div>
+
+				<div class="intros">
+					<p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+				</div>
+				<div class="intros">
+					<p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+				</div>
+				<div class="intros">
+					<p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+				</div>
+				<div class="intros">
+					<p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+				</div>
       </div>
     </section>
     <section id="listings-homepage">

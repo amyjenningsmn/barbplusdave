@@ -60,21 +60,59 @@ a.slider-prev, a.slider-next {
 	display: none;
 }
 
-/* Home Page Styles */
+/*  Home Page Styles
+================================================== */
 
 .one-column {
 	background-color: cyan;
 }
 
-/*.three-column {
-	background-color: pink;
-}*/
-
 .two-column, .two-column-full-width {
-    width: 60%;
+    width: 65%;
 		background-color: tomato;
+		padding: 15px;
 }
+
+.three-column {
+	background-color: pink;
+	padding: 15px;
+}
+
+.four-column {
+	background-color: yellow;
+}
+
+/* Get to Know Us Section */
+
+.tag {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	padding-bottom: 1.2em;
+}
+
+.intros {
+	width: 25%;
+	float: left;
+	padding: 10px;
+	text-align: center;
+}
+
+.intros i {
+	font-size: 2.5em;
+}
+
+@media only screen and (max-width: 480px) {
+	.intros {
+		padding: 0 0 30px;
+		width: 100%;
+	}
+}
+
+/* Footer Styles */
 
 .copyright {
 	clear: both;
 }
+
+/* need media queries */
