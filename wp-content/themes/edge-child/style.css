@@ -15,6 +15,13 @@
 /* General Styles
 ================================================== */
 
+/*Color Palette*/
+/*	#010419 - rich black
+		#454951 - outer space
+		#991D25 - vivid auburn
+		#F7EBD7 - moccasin
+		#C6C6C6 - lavender gray  */
+
 body {
 	background: pink;
 }
@@ -25,14 +32,115 @@ body {
 
 
 
-/*  #Header Override Styles
+/*  Header Override Styles
 ================================================== */
+
+#masthead {
+	background-color: #F7EBD7;
+}
 
 .top-header .widget-title {
     display: block;
 		padding-bottom: 0;
 		text-align: left;
 }
+
+#sticky_header {
+	background-color: #991D25;
+	border-bottom: 1px solid #010419;
+}
+
+.main-navigation a {
+	color: #F7EBD7;
+}
+
+/*  Footer Override Styles
+================================================== */
+
+.site-info {
+	background-color: #F7EBD7;
+}
+
+.lar {
+	width: 100px;
+	float: left;
+}
+
+.contact {
+	text-align: left;
+	line-height: 5px;
+}
+
+.contact h3 {
+	font-size: 1.4em;
+	line-height: 5px;
+	padding-top: 1.5em;
+
+}
+.contact h4 {
+	font-size: 1.2em;
+	line-height: 5px;
+
+}
+
+.mls {
+	width: 70px;
+	float: left;
+}
+
+.equal {
+	width: 30px;
+	float: left;
+}
+
+.letter-space {
+	letter-spacing: 2px;
+}
+
+/*.phone {
+	border-left: 1px solid #C69F70;
+	border-right: 1px solid #C69F70;
+}*/
+
+.truck {
+	width: 200px;
+}
+
+.love {
+	width: 120px;
+}
+
+.bullhorn-wrap {
+	position: relative;
+	height: 100px;
+	background-color: #fff;
+	border: 2px solid #C69F70;
+	border-radius: 6px;
+}
+
+.bullhorn {
+	position: absolute;
+	top: 25px;
+	left: 90px;
+}
+
+.bullhorn i {
+	font-size: 3em;
+}
+
+.phone-number {
+	position: absolute;
+	top: 34px;
+	left: 150px;
+	/*background-color: cyan;*/
+	line-height: 5px;
+}
+
+/*.copyright {
+	clear: both;
+}*/
+
+/* need media queries */
 
 /*  #Main Slider Override Styles
 ================================================== */
@@ -63,18 +171,18 @@ a.slider-prev, a.slider-next {
 /*  Home Page Styles
 ================================================== */
 
-.one-column {
+/*.one-column {
 	background-color: cyan;
-}
+}*/
 
 .two-column, .two-column-full-width {
     width: 65%;
-		background-color: tomato;
+		/*background-color: tomato;*/
 		padding: 15px;
 }
 
 .three-column {
-	background-color: pink;
+	/*background-color: pink;*/
 	padding: 15px;
 }
 
@@ -83,6 +191,11 @@ a.slider-prev, a.slider-next {
 }
 
 /* Get to Know Us Section */
+
+.gtk {
+	padding-bottom: 70px;
+	border-bottom: 1px solid #C69F70;
+}
 
 .tag {
 	display: block;
@@ -94,25 +207,27 @@ a.slider-prev, a.slider-next {
 .intros {
 	width: 25%;
 	float: left;
-	padding: 10px;
 	text-align: center;
+	padding: 10px;
+	margin: 40px 0;
 }
 
-.intros i {
+.intros i  {
 	font-size: 2.5em;
 }
 
 @media only screen and (max-width: 480px) {
 	.intros {
-		padding: 0 0 30px;
+		padding: 0;
 		width: 100%;
 	}
 }
 
-/* Footer Styles */
-
-.copyright {
+.gtk-btn {
 	clear: both;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	background-color: #991D25;
+	color: #F7EBD7;
 }
-
-/* need media queries */

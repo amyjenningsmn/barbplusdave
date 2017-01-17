@@ -28,33 +28,36 @@ get_header();
 	}?>
 	<!-- <main id="main"> -->
     <section id="get-to-know">
-      <div class="one-column clearfix">
+      <div class="one-column clearfix gtk">
 				<div>
-					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/love.png" />
+					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/wCCC.png" />
 				</div>
+				<div class="intros">
+					<p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+				</div>
+				<div class="intros">
+					<p><i class="fa fa-hand-peace-o" aria-hidden="true"></i></p>
+					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie. Muffin sweet tart apple pie. Muffin sweet tart apple pie.</p>
+				</div>
+				<div class="intros">
+					<p><i class="fa fa-coffee" aria-hidden="true"></i></p>
+					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+				</div>
+				<div class="intros">
+					<p><i class="fa fa fa-plug" aria-hidden="true"></i></p>
+					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+				</div>
+				<button class="btn-default gtk-btn">Get to Know Us!</button>
 
-				<div class="intros">
-					<p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
-					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
-				</div>
-				<div class="intros">
-					<p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
-					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
-				</div>
-				<div class="intros">
-					<p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
-					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
-				</div>
-				<div class="intros">
-					<p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
-					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
-				</div>
-      </div>
+			</div>
     </section>
     <section id="listings-homepage">
       <div class="three-column entry-content clearfix">
-        <h2>This is the "Our Listings" excerpt of two listings.</h2>
-        <p>
+
+        <h2>Our Listings</h2>
+				<a href="#">more</a>
+				<p>
           This is a test to see what will happen column-wise. Cake powder cake danish jelly beans macaroon gingerbread. Candy canes candy lemon drops croissant tart gingerbread carrot cake. Fruitcake tootsie roll cheesecake chupa chups lollipop chocolate cake cupcake icing. Tart biscuit tootsie roll candy canes macaroon pudding cupcake cake wafer. Ice cream cake chocolate candy chupa chups topping. Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie. Jelly-o cake cake jujubes chupa chups. Wafer chocolate powder tart sugar plum brownie. Brownie candy jelly-o candy canes powder biscuit topping gingerbread topping. Oat cake chocolate cake carrot cake. Croissant tiramisu cheesecake cupcake soufflé chocolate bar chocolate jelly-o. Croissant marshmallow croissant bonbon chocolate cake croissant powder.</p>
           <p>
             Cake powder cake danish jelly beans macaroon gingerbread. Candy canes candy lemon drops croissant tart gingerbread carrot cake. Fruitcake tootsie roll cheesecake chupa chups lollipop chocolate cake cupcake icing. Tart biscuit tootsie roll candy canes macaroon pudding cupcake cake wafer. Ice cream cake chocolate candy chupa chups topping. Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie. Jelly-o cake cake jujubes chupa chups. Wafer chocolate powder tart sugar plum brownie. Brownie candy jelly-o candy canes powder biscuit topping gingerbread topping. Oat cake chocolate cake carrot cake. Croissant tiramisu cheesecake cupcake soufflé chocolate bar chocolate jelly-o. Croissant marshmallow croissant bonbon chocolate cake croissant powder.</p>
