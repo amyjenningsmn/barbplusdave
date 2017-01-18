@@ -16,7 +16,6 @@
  			<?php while ( have_posts() ) : the_post();
 
         $main_image = get_field('main_image');
-        // ^^ “get_field” is function that comes with ACF, it takes one param, the computer-readable name of the field
         $price = get_field('price');
         $property_type = get_field('property_type');
         $stories = get_field('stories');
@@ -31,16 +30,10 @@
           <?php if($main_image) { ?>
             <img src="<?php echo $main_image; ?>" />
           <?php } ?>
-          <?php if($image_1) { ?>
-            <img src="<?php echo $image_1; ?>" />
-          <?php } ?>
-          <?php if($image_2) { ?>
-            <img src="<?php echo $image_2; ?>" />
-          <?php } ?>
         </div>
 
             <!-- <h2><?php the_title(); ?></h2> -->
-            <h3>Price: $<?php echo $price; ?></h5>
+            <h3>Price: $<?php echo $price; ?></h3>
             <h4>Property Type: <?php echo $property_type; ?></h4>
             <h4>Stories: <?php echo $stories; ?></h4>
             <h4>Bedrooms: <?php echo $bedrooms; ?></h4>

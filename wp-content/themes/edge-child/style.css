@@ -12,15 +12,29 @@
 
 @import url("../edge/style.css");
 
-/* General Styles
-================================================== */
+/* Table of Contents
+==================================================
+# Color Palette
+# General Styles
+# Header Override Styles
+# Footer Override Styles
+# Main Slider Override Styles
+# Home Page Styles
+	## Get to Know Us Section
+	## Our Listings Section
+*/
 
-/*Color Palette*/
+/*  # Color Palette
+		================================================== */
+
 /*	#010419 - rich black
 		#454951 - outer space
 		#991D25 - vivid auburn
 		#F7EBD7 - moccasin
 		#C6C6C6 - lavender gray  */
+
+/*  # General Styles
+		================================================== */
 
 body {
 	background: pink;
@@ -30,9 +44,27 @@ body {
 	font-family: 'Arsenal', sans-serif;
 }*/
 
+/*.one-column {
+	background-color: cyan;
+}*/
+
+.two-column, .two-column-full-width {
+    width: 65%;
+		/*background-color: tomato;*/
+		padding: 15px;
+}
+
+.three-column {
+	/*background-color: pink;*/
+	padding: 15px;
+}
+
+.four-column {
+	background-color: yellow;
+}
 
 
-/*  Header Override Styles
+/*  # Header Override Styles
 ================================================== */
 
 #masthead {
@@ -54,11 +86,13 @@ body {
 	color: #F7EBD7;
 }
 
-/*  Footer Override Styles
+/*  # Footer Override Styles
 ================================================== */
 
 .site-info {
 	background-color: #F7EBD7;
+	border-top: 5px solid #991D25;
+
 }
 
 .lar {
@@ -142,7 +176,7 @@ body {
 
 /* need media queries */
 
-/*  #Main Slider Override Styles
+/*  # Main Slider Override Styles
 ================================================== */
 
 
@@ -168,33 +202,15 @@ a.slider-prev, a.slider-next {
 	display: none;
 }
 
-/*  Home Page Styles
+/*  # Home Page Styles
 ================================================== */
 
-/*.one-column {
-	background-color: cyan;
-}*/
 
-.two-column, .two-column-full-width {
-    width: 65%;
-		/*background-color: tomato;*/
-		padding: 15px;
-}
-
-.three-column {
-	/*background-color: pink;*/
-	padding: 15px;
-}
-
-.four-column {
-	background-color: yellow;
-}
-
-/* Get to Know Us Section */
+/* ## Get to Know Us Section =================== */
 
 .gtk {
 	padding-bottom: 70px;
-	border-bottom: 1px solid #C69F70;
+	border-bottom: 2px solid #991D25;
 }
 
 .tag {
@@ -230,4 +246,35 @@ a.slider-prev, a.slider-next {
   margin-right: auto;
 	background-color: #991D25;
 	color: #F7EBD7;
+}
+
+/* ## Our Listings Section =================== */
+
+/* will adjust when setting main typography styles */
+
+div.listings-heading {
+	margin: 70px 0;
+	border-bottom: 1px solid #C69F70;
+}
+
+.listings-heading h2, .listings-info h3 {
+	line-height: 5px;
+}
+a.more {
+	font-family: 'Lato', sans-serif;
+	font-size: .6em;
+	margin-left: 20px;
+}
+
+div.listings-info {
+	margin-bottom: 40px;
+}
+
+.listings-info h3, .listings-info h4{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6em;
+}
+
+.listings-info h4 {
+	font-size: 1.1em;
 }

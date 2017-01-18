@@ -1,5 +1,12 @@
 <?php
 
+// edge-child functions.php
+add_action( 'wp_enqueue_scripts', 'edge_enqueue_styles' );
+function edge_enqueue_styles() {
+	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+}
+// end edge-child functions.php 
+
 /********************* Create Custom Post Types ***********************************/
 function create_custom_post_types() {
     register_post_type( 'listings',
@@ -9,7 +16,7 @@ function create_custom_post_types() {
             'labels' => array(
                 'name' => __( 'Listings' ),
             //   ^^  human readable name ^^ in left nav wp admin dash
-                'singular_name' => __( 'Individual Listing' )
+                'singular_name' => __( 'Listing' )
             //   ^^ human readable name for a single listing post
             ),
             'public' => true,

@@ -23,6 +23,7 @@ get_header();
 <?php }
 	}else{ // for page/ post
 		if(($layout != 'no-sidebar') && ($layout != 'full-width')){ ?>
+
 <!-- <div id="primary"> -->
 	<?php }
 	}?>
@@ -54,13 +55,28 @@ get_header();
     </section>
     <section id="listings-homepage">
       <div class="three-column entry-content clearfix">
-
-        <h2>Our Listings</h2>
-				<a href="#">more</a>
-				<p>
-          This is a test to see what will happen column-wise. Cake powder cake danish jelly beans macaroon gingerbread. Candy canes candy lemon drops croissant tart gingerbread carrot cake. Fruitcake tootsie roll cheesecake chupa chups lollipop chocolate cake cupcake icing. Tart biscuit tootsie roll candy canes macaroon pudding cupcake cake wafer. Ice cream cake chocolate candy chupa chups topping. Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie. Jelly-o cake cake jujubes chupa chups. Wafer chocolate powder tart sugar plum brownie. Brownie candy jelly-o candy canes powder biscuit topping gingerbread topping. Oat cake chocolate cake carrot cake. Croissant tiramisu cheesecake cupcake soufflé chocolate bar chocolate jelly-o. Croissant marshmallow croissant bonbon chocolate cake croissant powder.</p>
-          <p>
-            Cake powder cake danish jelly beans macaroon gingerbread. Candy canes candy lemon drops croissant tart gingerbread carrot cake. Fruitcake tootsie roll cheesecake chupa chups lollipop chocolate cake cupcake icing. Tart biscuit tootsie roll candy canes macaroon pudding cupcake cake wafer. Ice cream cake chocolate candy chupa chups topping. Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie. Jelly-o cake cake jujubes chupa chups. Wafer chocolate powder tart sugar plum brownie. Brownie candy jelly-o candy canes powder biscuit topping gingerbread topping. Oat cake chocolate cake carrot cake. Croissant tiramisu cheesecake cupcake soufflé chocolate bar chocolate jelly-o. Croissant marshmallow croissant bonbon chocolate cake croissant powder.</p>
+				<div class="listings-heading">
+					<h2>Our Listings<a class="more" href="#">see all <span>&rsaquo;</span></a></h2>
+					<!-- need permalink for all listings -->
+				</div>
+				<?php query_posts('posts_per_page=2&post_type=listings'); ?>
+				<?php while ( have_posts() ) : the_post();
+					$main_image = get_field('main_image');
+	        $price = get_field('price');
+	        $property_type = get_field('property_type');
+	        $stories = get_field('stories');
+	        $bedrooms = get_field('bedrooms');
+	        $bathrooms = get_field('bathrooms');
+	        $mls_number = get_field('mls_number');
+	     ?>
+				<div class="listings-info">
+					<h3>$<?php echo $price; ?><a class="more" href="<?php the_permalink(); ?>">learn more <span>&rsaquo;</span></a></h3>
+					<?php if($main_image) { ?>
+					<img src="<?php echo $main_image; ?>" />
+					<?php } ?>
+					<h4><?php the_title(); ?></h4>
+				</div>
+				<?php endwhile; // end of the loop. ?>
       </div>
     </section>
 
@@ -117,14 +133,14 @@ get_header();
 	} ?>
 	<!-- </main> <!-- #main -->
 	<?php
-if( 'default' == $layout ) { //Settings from customizer
-	if(($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_settings['edge_sidebar_layout_options'] != 'fullwidth')): ?>
-</div> <!-- #primary -->
-<?php endif;
-}else{ // for page/post
-	if(($layout != 'no-sidebar') && ($layout != 'full-width')){
-		echo '</div><!-- #primary -->';
-	}
-}
+		if( 'default' == $layout ) { //Settings from customizer
+			if(($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_settings['edge_sidebar_layout_options'] != 'fullwidth')): ?>
+		</div> <!-- #primary -->
+	<?php endif;
+		}else{ // for page/post
+			if(($layout != 'no-sidebar') && ($layout != 'full-width')){
+				echo '</div><!-- #primary -->';
+			}
+		}
 get_sidebar();
 get_footer(); ?>
