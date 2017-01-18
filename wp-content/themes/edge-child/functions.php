@@ -5,7 +5,7 @@ add_action( 'wp_enqueue_scripts', 'edge_enqueue_styles' );
 function edge_enqueue_styles() {
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
-// end edge-child functions.php 
+// end edge-child functions.php
 
 /********************* Create Custom Post Types ***********************************/
 function create_custom_post_types() {
@@ -23,6 +23,24 @@ function create_custom_post_types() {
             'has_archive' => true,
             // ^^ because we want it to have an archive
             'rewrite' => array( 'slug' => 'listings' ),
+            // ^^ name used in the URLs for listings posts. They will look something like this: http://localhost:8888/barbplusdave/listings/something-something/
+        )
+    );
+
+    register_post_type( 'blog',
+    // ^^ unique name
+        array(
+    //   ^^ defines settings for new post type
+            'labels' => array(
+                'name' => __( 'Blog' ),
+            //   ^^  human readable name ^^ in left nav wp admin dash
+                'singular_name' => __( 'Blog Post' )
+            //   ^^ human readable name for a single post
+            ),
+            'public' => true,
+            'has_archive' => true,
+            // ^^ because we want it to have an archive
+            'rewrite' => array( 'slug' => 'blog' ),
             // ^^ name used in the URLs for listings posts. They will look something like this: http://localhost:8888/barbplusdave/listings/something-something/
         )
     );
