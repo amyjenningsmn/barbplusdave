@@ -15,7 +15,6 @@
       <article class="blog-single">
         <?php while ( have_posts() ) : the_post();
           $main_post_image = get_field('main_post_image');
-          $post_content = get_field('post_content');
           $post_image_1 = get_field('post_image_1');
           $post_image_2 = get_field('post_image_2');
           $post_image_3 = get_field('post_image_3');
@@ -24,11 +23,13 @@
           $post_image_6 = get_field('post_image_6');
         ?>
         <div class="blog-single-wrap">
+          <h2><?php the_title(); ?></h2>
+          <h3><?php the_date(); ?></h3>
           <?php if($main_post_image) { ?>
             <img src="<?php echo $main_post_image; ?>" />
           <?php } ?>
-          <h2><?php the_title(); ?></h2>
-          <p><?php echo $post_content; ?></p>
+
+          <p><?php the_content(); ?></p>
         </div>
         <div class="blog-single-gallery">
           <?php if($post_image_1) { ?>

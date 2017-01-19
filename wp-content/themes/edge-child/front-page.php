@@ -55,13 +55,13 @@ get_header();
     </section>
     <section id="listings-homepage">
       <div class="three-column entry-content clearfix">
-				<div class="listings-heading">
+				<div class="main-heading">
 					<h2>Our Listings<a class="more" href="#">see all <span>&rsaquo;</span></a></h2>
 					<!-- need permalink for all listings -->
 				</div>
 				<?php query_posts('posts_per_page=2&post_type=listings'); ?>
 				<?php while ( have_posts() ) : the_post();
-					$main_image = get_field('main_image');
+					$main_listing_image = get_field('main_listing_image');
 	        $price = get_field('price');
 	        $property_type = get_field('property_type');
 	        $stories = get_field('stories');
@@ -69,10 +69,10 @@ get_header();
 	        $bathrooms = get_field('bathrooms');
 	        $mls_number = get_field('mls_number');
 	     ?>
-				<div class="listings-info">
+				<div class="main-info">
 					<h3>$<?php echo $price; ?><a class="more" href="<?php the_permalink(); ?>">learn more <span>&rsaquo;</span></a></h3>
-					<?php if($main_image) { ?>
-					<img src="<?php echo $main_image; ?>" />
+					<?php if($main_listing_image) { ?>
+						<img src="<?php echo $main_listing_image; ?>" />
 					<?php } ?>
 					<h4><?php the_title(); ?></h4>
 				</div>
@@ -82,13 +82,24 @@ get_header();
     </section>
 
     <section id="blog-homepage">
-      <div class="two-column entry-content clearfix">
-        <h2>This is the "Blog" excerpt of two blog posts.</h2>
-        <p>
-          This is a test to see what will happen column-wise. Cake powder cake danish jelly beans macaroon gingerbread. Candy canes candy lemon drops croissant tart gingerbread carrot cake. Fruitcake tootsie roll cheesecake chupa chups lollipop chocolate cake cupcake icing. Tart biscuit tootsie roll candy canes macaroon pudding cupcake cake wafer. Ice cream cake chocolate candy chupa chups topping. Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie. Jelly-o cake cake jujubes chupa chups. Wafer chocolate powder tart sugar plum brownie. Brownie candy jelly-o candy canes powder biscuit topping gingerbread topping. Oat cake chocolate cake carrot cake. Croissant tiramisu cheesecake cupcake soufflé chocolate bar chocolate jelly-o. Croissant marshmallow croissant bonbon chocolate cake croissant powder.</p>
-          <p>
-            Cake powder cake danish jelly beans macaroon gingerbread. Candy canes candy lemon drops croissant tart gingerbread carrot cake. Fruitcake tootsie roll cheesecake chupa chups lollipop chocolate cake cupcake icing. Tart biscuit tootsie roll candy canes macaroon pudding cupcake cake wafer. Ice cream cake chocolate candy chupa chups topping. Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie. Jelly-o cake cake jujubes chupa chups. Wafer chocolate powder tart sugar plum brownie. Brownie candy jelly-o candy canes powder biscuit topping gingerbread topping. Oat cake chocolate cake carrot cake. Croissant tiramisu cheesecake cupcake soufflé chocolate bar chocolate jelly-o. Croissant marshmallow croissant bonbon chocolate cake croissant powder.</p>
-      </div>
+      <div class="two-column home-blog entry-content clearfix">
+				<div class="main-heading">
+					<h2>What are we up to now?<a class="more" href="#">more <span>&rsaquo;</span></a></h2>
+				</div>
+				<?php query_posts('posts_per_page=2&post_type=blog'); ?>
+				<?php while ( have_posts() ) : the_post();
+          $main_post_image = get_field('main_post_image');
+        ?>
+				<div class="main-info">
+					<h3><?php the_title(); ?></h3>
+					<?php if($main_post_image) { ?>
+						<img src="<?php echo $main_post_image; ?>" />
+					<?php } ?>
+					<p><?php the_excerpt(); ?><a class="blog-more" href="<?php the_permalink(); ?>"> read more <span>&rsaquo;</span></a></p>
+				</div>
+				<?php endwhile; ?>
+			 <?php wp_reset_query(); ?>
+			</div>
     </section>
 
     <section id="instagram-feed">

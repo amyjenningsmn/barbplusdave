@@ -15,7 +15,7 @@
 
  			<?php while ( have_posts() ) : the_post();
 
-        $main_image = get_field('main_image');
+        $main_image = get_field('main_listing_image');
         $price = get_field('price');
         $property_type = get_field('property_type');
         $stories = get_field('stories');
@@ -27,8 +27,8 @@
       <article class="listing">
 
         <div class="listing-images">
-          <?php if($main_image) { ?>
-            <img src="<?php echo $main_image; ?>" />
+          <?php if($main_listing_image) { ?>
+            <img src="<?php echo $main_listing_image; ?>" />
           <?php } ?>
         </div>
 
