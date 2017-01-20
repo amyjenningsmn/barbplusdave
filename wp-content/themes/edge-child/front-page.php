@@ -68,13 +68,26 @@ get_header();
 	        $bedrooms = get_field('bedrooms');
 	        $bathrooms = get_field('bathrooms');
 	        $mls_number = get_field('mls_number');
+					$status = get_field('status');
 	     ?>
 				<div class="main-info">
-					<h3>$<?php echo $price; ?><a class="more" href="<?php the_permalink(); ?>">learn more <span>&rsaquo;</span></a></h3>
-					<?php if($main_listing_image) { ?>
-						<img src="<?php echo $main_listing_image; ?>" />
-					<?php } ?>
-					<h4><?php the_title(); ?></h4>
+					<h3>$<?php echo $price; ?>
+						<a class="more" href="<?php the_permalink(); ?>">learn more <span>&rsaquo;</span></a></h3>
+						<div class="listing-image-wrap">
+							<?php if($main_listing_image) { ?>
+								<img src="<?php echo $main_listing_image; ?>" />
+								<?php if( $status == 'coming_soon' ) { ?>
+								<span class="not-sold">Coming Soon!</span>
+								<?php } ?>
+								<?php if( $status == 'sale_pending' ) { ?>
+								<span class="not-sold">Sale Pending</span>
+								<?php } ?>
+								<?php if( $status == 'sold' ) { ?>
+								<span class="sold">Sold!</span>
+								<?php } ?>
+							<?php } ?>
+						</div>
+						<h4><?php the_title(); ?></h4>
 				</div>
 				<?php endwhile; // end of the loop. ?>
 			 <?php wp_reset_query(); ?>
@@ -90,7 +103,7 @@ get_header();
 				<?php while ( have_posts() ) : the_post();
           $main_post_image = get_field('main_post_image');
         ?>
-				<div class="main-info">
+				<div class="main-info blog-main-info clearfix">
 					<h3><?php the_title(); ?></h3>
 					<?php if($main_post_image) { ?>
 						<img src="<?php echo $main_post_image; ?>" />

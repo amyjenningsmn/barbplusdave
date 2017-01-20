@@ -269,6 +269,8 @@ a.more {
 
 div.main-info {
 	margin-bottom: 40px;
+	border-bottom: .5px solid #C69F70;
+
 }
 
 .main-info h3, .main-info h4{
@@ -284,17 +286,12 @@ div.home-blog {
 	padding-left: 75px;
 }
 
-#blog-homepage .main-info img {
+div.blog-main-info img {
 	width: 300px;
+	padding-right: 20px;
 	float: left;
 }
-/* ^^ What's more important, width or height? */
 
-#blog-homepage .main-info p {
-	margin-left: 350px;
-}
-
-#blog-homepage div.main-info {
-	padding-bottom: 150px;
-	clear: both;
+div.blog-main-info {
+	padding-bottom: 50px;
 }
