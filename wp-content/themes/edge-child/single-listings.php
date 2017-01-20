@@ -15,13 +15,17 @@
 
  			<?php while ( have_posts() ) : the_post();
 
-        $main_image = get_field('main_listing_image');
+        $main_listing_image = get_field('main_listing_image');
         $price = get_field('price');
         $property_type = get_field('property_type');
         $stories = get_field('stories');
         $bedrooms = get_field('bedrooms');
         $bathrooms = get_field('bathrooms');
         $mls_number = get_field('mls_number');
+        // $status = get_field('status');
+        $field = get_field_object('status');
+        $value = $field['value'];
+        $label = $field['choices'][ $value ];
      ?>
 
       <article class="listing">
@@ -32,9 +36,10 @@
           <?php } ?>
         </div>
 
-            <!-- <h2><?php the_title(); ?></h2> -->
+            <h2><?php the_title(); ?></h2>
             <h3>Price: $<?php echo $price; ?></h3>
             <h4>Property Type: <?php echo $property_type; ?></h4>
+            <h4>Status: <span class="status-<?php echo $value; ?>"><?php echo $label; ?></span></h4>
             <h4>Stories: <?php echo $stories; ?></h4>
             <h4>Bedrooms: <?php echo $bedrooms; ?></h4>
             <h4>Bathrooms: <?php echo $bathrooms; ?></h4>

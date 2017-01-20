@@ -167,5 +167,5 @@ get_header();
 				echo '</div><!-- #primary -->';
 			}
 		}
-get_sidebar();
+// get_sidebar();
 get_footer(); ?>

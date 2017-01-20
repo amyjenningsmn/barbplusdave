@@ -9,6 +9,9 @@
  * @since Edge 1.0
  */
 
+
+// This is the default page Listings and Blog is using.
+
 get_header();
 	$edge_settings = edge_get_theme_options();
 	global $edge_content_layout;
@@ -41,5 +44,5 @@ get_header();
 						</div> <!-- #primary -->
 						<?php endif;
 				}
-get_sidebar();
+// get_sidebar();
 get_footer(); ?>
