@@ -35,18 +35,22 @@ get_header();
 				</div>
 				<div class="intros">
 					<p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+					<h3>Warm</h3>
 					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
 				</div>
 				<div class="intros">
 					<p><i class="fa fa-hand-peace-o" aria-hidden="true"></i></p>
+					<h3>Cool</h3>
 					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie. Muffin sweet tart apple pie. Muffin sweet tart apple pie.</p>
 				</div>
 				<div class="intros">
 					<p><i class="fa fa-coffee" aria-hidden="true"></i></p>
+					<h3>Calm</h3>
 					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
 				</div>
 				<div class="intros">
 					<p><i class="fa fa fa-plug" aria-hidden="true"></i></p>
+					<h3>Connected</h3>
 					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
 				</div>
 				<button class="btn-default gtk-btn">Get to Know Us!</button>
@@ -116,11 +120,10 @@ get_header();
     </section>
 
     <section id="instagram-feed">
-      <div class="one-column clearfix">
-        <h2>Instagram Feed will go here.</h2>
-        <p>
-          Cake powder cake danish jelly beans macaroon gingerbread. Candy canes candy lemon drops croissant tart gingerbread carrot cake. Fruitcake tootsie roll cheesecake chupa chups lollipop chocolate cake cupcake icing. Tart biscuit tootsie roll candy canes macaroon pudding cupcake cake wafer. Ice cream cake chocolate candy chupa chups topping. Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie. Jelly-o cake cake jujubes chupa chups. Wafer chocolate powder tart sugar plum brownie. Brownie candy jelly-o candy canes powder biscuit topping gingerbread topping. Oat cake chocolate cake carrot cake. Croissant tiramisu cheesecake cupcake soufflé chocolate bar chocolate jelly-o. Croissant marshmallow croissant bonbon chocolate cake croissant powder.</p>
-      </div>
+				<div class="one-column clearfix insta-wrap">
+					<h2>The Latest from Instagram</h2>
+					<?php echo do_shortcode( '[instagram-feed]' ); ?>
+				</div>
     </section>
 	<?php
 	if( has_post_thumbnail() && $edge_settings['edge_display_page_featured_image']!=0) { ?>

@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * The template for archived Blog posts
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
@@ -44,5 +44,5 @@ get_header();
 						</div> <!-- #primary -->
 						<?php endif;
 				}
-// get_sidebar();
+get_sidebar();
 get_footer(); ?>

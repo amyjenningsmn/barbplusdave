@@ -196,6 +196,7 @@ function edge_page_sliders() {
 					}
 					$edge_page_sliders_display .= '<div class="slider-buttons">';
 					if($edge_settings['edge_slider_button'] == 0){
+						$excerpt_text = $edge_settings['edge_tag_text'];
 						if($excerpt_text == '' || $excerpt_text == 'Read More') :
 							$edge_page_sliders_display 	.= '<a title='.'"'.get_the_title(). '"'. ' '.'href="'.get_permalink().'"'.' class="btn-default">'.__('Read More', 'edge').'</a>';
 						else:
