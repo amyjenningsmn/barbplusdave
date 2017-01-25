@@ -36,13 +36,23 @@
 /*  # General Styles
 		================================================== */
 
+/* *** Notes *** */
+
+/*
+
+#primary - use when get_sidebar();
+#content - use for padding top page from nav
+
+*/
+
 body {
 	background: pink;
 }
 
-/*h1, h2, h3, h4, h5, h6 {
-	font-family: 'Arsenal', sans-serif;
-}*/
+h1, h2, h3 {
+	color: #991D25;
+}
+
 
 /*.one-column {
 	background-color: cyan;
@@ -91,8 +101,8 @@ body {
 
 
 .site-info {
-	background-color: #F7EBD7;
-	border-top: 5px solid rgba(153, 29, 37, 0.75);
+	background-color: #C6C6C6;
+	/*border-top: 5px solid rgba(162, 162, 162, 0.75);*/
 }
 
 .lar {
@@ -232,6 +242,11 @@ a.slider-prev, a.slider-next {
 	font-size: 2.5em;
 }
 
+.info-text {
+	text-align: justify;
+	padding: 0 20px;
+}
+
 @media only screen and (max-width: 480px) {
 	.intros {
 		padding: 0;
@@ -351,4 +366,43 @@ div.blog-main-info {
 
 .insta-wrap h2 {
 	text-align: center;
+}
+
+/* #About Page =================== */
+
+.hello {
+	padding-bottom: 100px;
+	border-bottom: 2px solid #991D25;
+}
+
+.tag-sub {
+	display: block;
+	height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+	padding-bottom: 1.2em;
+}
+
+.frame-wrap {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+.frame-wrap img{
+	width: 250px;
+	height: 400px;
+}
+
+.frame-wrap .info-text {
+	padding: 0 70px;
+}
+
+.about-gtk {
+	padding: 100px 0 0;
+	border: none;
+}
+
+.ws-wrap {
+	padding-top: 100px;
 }

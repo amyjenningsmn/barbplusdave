@@ -8,70 +8,86 @@
  * @since Edge 1.0
  */
 
-get_header();
-	$edge_settings = edge_get_theme_options();
-	global $edge_content_layout;
-	if( $post ) {
-		$layout = get_post_meta( $post->ID, 'edge_sidebarlayout', true );
-	}
-	if( empty( $layout ) || is_archive() || is_search() || is_home() ) {
-		$layout = 'default';
-	}
-	if( 'default' == $layout ) { //Settings from customizer
-		if(($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_settings['edge_sidebar_layout_options'] != 'fullwidth')){ ?>
+get_header(); ?>
 
-<div id="primary">
-<?php }
-	}else{ // for page/ post
-		if(($layout != 'no-sidebar') && ($layout != 'full-width')){ ?>
-<div id="primary">
-	<?php }
-	}?>
 	<main id="main">
-	<?php
-	if( has_post_thumbnail() && $edge_settings['edge_display_page_featured_image']!=0) { ?>
-		<div class="post-image-content">
-			<figure class="post-featured-image">
-				<a href="<?php the_permalink();?>" title="<?php echo the_title_attribute('echo=0'); ?>">
-				<?php the_post_thumbnail(); ?>
-				</a>
-			</figure><!-- end.post-featured-image  -->
-		</div> <!-- end.post-image-content -->
-	<?php }
-	if( have_posts() ) {
-		while( have_posts() ) {
-			the_post(); ?>
-	<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<article>
-		<div class="entry-content clearfix">
-			<?php the_content();
-				wp_link_pages( array(
-				'before'            => '<div style="clear: both;"></div><div class="pagination clearfix">'.__( 'Pages:', 'edge' ),
-				'after'             => '</div>',
-				'link_before'       => '<span>',
-				'link_after'        => '</span>',
-				'pagelink'          => '%',
-				'echo'              => 1
-				) ); ?>
-		</div> <!-- entry-content clearfix-->
-		<?php  comments_template(); ?>
-		</article>
-	</section>
-	<?php }
-	} else { ?>
-	<h1 class="entry-title"> <?php esc_html_e( 'No Posts Found.', 'edge' ); ?> </h1>
-	<?php
-	} ?>
+		<section id="hello">
+			<div class="one-column clearfix hello">
+				<div class="hello-wrap">
+					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hello.png" />
+					<img class="tag-sub" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/niceToMeetYou.png" />
+				</div>
+				<div class="frame-wrap">
+					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/rectangle2.png" />
+					<h3>Barb Palmer</h3>
+					<p class="info-text">Cheesecake gummi bears gummi bears lemon drops sweet gummies gummi bears donut. Bonbon candy canes tart croissant apple pie soufflé bear claw. </br>Topping sesame snaps carrot cake pie lollipop dessert liquorice. Wafer gummies topping tiramisu cake gingerbread pie. Macaroon powder jujubes bear claw.</p>
+				</div>
+				<div class="frame-wrap">
+					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/rectangle2.png" />
+					<h3>Dave Palmer</h3>
+					<p class="info-text">Cheesecake gummi bears gummi bears lemon drops sweet gummies gummi bears donut.</br>Topping sesame snaps carrot cake pie lollipop dessert liquorice. Wafer gummies topping tiramisu cake gingerbread pie.</p>
+				</div>
+		  </div>
+		</section>
+		<section id="why-us">
+			<div class="one-column clearfix gtk about-gtk">
+					<div>
+						<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/whyUs.png" />
+					</div>
+					<div class="intros">
+						<p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
+						<h3>Warm</h3>
+						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+					</div>
+					<div class="intros">
+						<p><i class="fa fa-hand-peace-o" aria-hidden="true"></i></p>
+						<h3>Cool</h3>
+						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie. Muffin sweet tart apple pie. Muffin sweet tart apple pie.</p>
+					</div>
+					<div class="intros">
+						<p><i class="fa fa-coffee" aria-hidden="true"></i></p>
+						<h3>Calm</h3>
+						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+					</div>
+					<div class="intros">
+						<p><i class="fa fa fa-plug" aria-hidden="true"></i></p>
+						<h3>Connected</h3>
+						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+					</div>
+				</div>
+				<div class="one-column clearfix gtk">
+					<div class="intros">
+						<p><i class="fa fa-paperclip" aria-hidden="true"></i></p>
+						<h3>Warm</h3>
+						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+					</div>
+					<div class="intros">
+						<p><i class="fa fa-diamond" aria-hidden="true"></i></p>
+						<h3>Cool</h3>
+						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie. Muffin sweet tart apple pie. Muffin sweet tart apple pie.</p>
+					</div>
+					<div class="intros">
+						<p><i class="fa fa-fort-awesome" aria-hidden="true"></i></p>
+						<h3>Calm</h3>
+						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+					</div>
+					<div class="intros">
+						<p><i class="fa fa-calculator" aria-hidden="true"></i></p>
+						<h3>Connected</h3>
+						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+					</div>
+				</div>
+	  </section>
+		<section id="word-street">
+			<div class="one-column clearfix word-street">
+				<div class="ws-wrap">
+					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/wordOnTheStreet.png" />
+				</div>
+			</div>
+		</section>
+
 	</main> <!-- #main -->
-	<?php
-if( 'default' == $layout ) { //Settings from customizer
-	if(($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_settings['edge_sidebar_layout_options'] != 'fullwidth')): ?>
+
 </div> <!-- #primary -->
-<?php endif;
-}else{ // for page/post
-	if(($layout != 'no-sidebar') && ($layout != 'full-width')){
-		echo '</div><!-- #primary -->';
-	}
-}
-// get_sidebar();
-get_footer(); ?>
+
+<?php get_footer(); ?>

@@ -20,7 +20,7 @@ get_header();
 	}
 	if( 'default' == $layout ) { //Settings from customizer
 		if(($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_settings['edge_sidebar_layout_options'] != 'fullwidth')){ ?>
-			<div id="primary">
+			<!-- <div id="primary"> -->
 				<?php }
 	}?>
 				<main id="main" class="site-main clearfix">
@@ -28,7 +28,20 @@ get_header();
 					if( have_posts() ) {
 						while( have_posts() ) {
 							the_post();
-							get_template_part( 'content', get_post_format() );
+							$main_listing_image = get_field('main_listing_image');
+							$price = get_field('price');
+							$field = get_field_object('status');
+			        $value = $field['value'];
+			        $label = $field['choices'][ $value ];?>
+							<div class="listing-images">
+			          <?php if($main_listing_image) { ?>
+			            <img src="<?php echo $main_listing_image; ?>" />
+									<h3>Price: $<?php echo $price; ?></h3>
+									<h4>Status: <span class="status-<?php echo $value; ?>"><?php echo $label; ?></span></h4>
+			          <?php } ?>
+			        </div>
+
+							<?php get_template_part( 'content', get_post_format() );
 						}
 					}
 					else { ?>
@@ -38,7 +51,7 @@ get_header();
 				<?php get_template_part( 'pagination', 'none' );
 				if( 'default' == $layout ) { //Settings from customizer
 					if(($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_settings['edge_sidebar_layout_options'] != 'fullwidth')): ?>
-						</div> <!-- #primary -->
+						<!-- </div>  #primary --> 
 						<?php endif;
 				}
 // get_sidebar();

@@ -27,7 +27,7 @@ get_header();
 <!-- <div id="primary"> -->
 	<?php }
 	}?>
-	<!-- <main id="main"> -->
+	<main id="main">
     <section id="get-to-know">
       <div class="one-column clearfix gtk">
 				<div>
@@ -36,22 +36,22 @@ get_header();
 				<div class="intros">
 					<p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
 					<h3>Warm</h3>
-					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+					<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
 				</div>
 				<div class="intros">
 					<p><i class="fa fa-hand-peace-o" aria-hidden="true"></i></p>
 					<h3>Cool</h3>
-					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie. Muffin sweet tart apple pie. Muffin sweet tart apple pie.</p>
+					<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie. Muffin sweet tart apple pie. Muffin sweet tart apple pie.</p>
 				</div>
 				<div class="intros">
 					<p><i class="fa fa-coffee" aria-hidden="true"></i></p>
 					<h3>Calm</h3>
-					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+					<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
 				</div>
 				<div class="intros">
 					<p><i class="fa fa fa-plug" aria-hidden="true"></i></p>
 					<h3>Connected</h3>
-					<p>Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+					<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
 				</div>
 				<button class="btn-default gtk-btn">Get to Know Us!</button>
 
