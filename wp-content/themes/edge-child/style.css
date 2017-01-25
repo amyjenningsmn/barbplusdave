@@ -218,24 +218,23 @@ a.slider-prev, a.slider-next {
 
 /* ## Get to Know Us Section =================== */
 
-.gtk {
-	padding-bottom: 70px;
-	border-bottom: 1.5px solid #991D25;
+.us {
+	padding: 5% 8%;
 }
 
+/* Illustrated Img Headings */
 .tag {
 	display: block;
   margin-left: auto;
   margin-right: auto;
-	padding-bottom: 1.2em;
+	padding-bottom: 3%;
 }
 
 .intros {
 	width: 25%;
 	float: left;
 	text-align: center;
-	padding: 10px;
-	margin: 40px 0;
+	padding: 3% 3%;
 }
 
 .intros i  {
@@ -244,7 +243,6 @@ a.slider-prev, a.slider-next {
 
 .info-text {
 	text-align: justify;
-	padding: 0 20px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -265,16 +263,18 @@ a.slider-prev, a.slider-next {
 
 /* ## Our Listings & Blog Sections =================== */
 
-/* will adjust when setting main typography styles */
+/* .main-heading and .main-info are for both Listings and Blog sections*/
 
 div.main-heading {
 	margin: 120px 0 70px;
+	/*margin: 25% 0 15%;*/
 	border-bottom: 1px solid #C69F70;
 }
 
 .main-heading h2, .main-info h3 {
 	line-height: 5px;
 }
+
 a.more {
 	font-family: 'Lato', sans-serif;
 	font-size: .6em;
@@ -320,9 +320,9 @@ top: 0;
 background-color: rgba(0, 0, 0, 0.5);
 padding: 1em;
 font-weight: 700;
-/*z-index: 2;
+z-index: 2;
 -webkit-box-sizing: border-box;
-box-sizing: border-box;*/
+box-sizing: border-box;
 }
 
 div.listing-image-wrap span.sold {
@@ -338,9 +338,9 @@ background-color: #991D25;
 opacity: 0.8;
 padding: 1em;
 font-weight: 700;
-/*z-index: 2;
+z-index: 2;
 -webkit-box-sizing: border-box;
-box-sizing: border-box;*/
+box-sizing: border-box;
 }
 
 div.home-blog {
@@ -360,8 +360,7 @@ div.blog-main-info {
 /* ## Instagram Section =================== */
 
 .insta-wrap {
-	padding-top: 70px;
-	border: 2px solid #991D25;
+	padding: 5% 10%;
 }
 
 .insta-wrap h2 {
@@ -370,17 +369,11 @@ div.blog-main-info {
 
 /* #About Page =================== */
 
-.hello {
-	padding-bottom: 100px;
-	border-bottom: 2px solid #991D25;
-}
-
 .tag-sub {
 	display: block;
 	height: 80px;
   margin-left: auto;
   margin-right: auto;
-	padding-bottom: 1.2em;
 }
 
 .frame-wrap {
@@ -390,19 +383,28 @@ div.blog-main-info {
 }
 
 .frame-wrap img{
-	width: 250px;
-	height: 400px;
+	width: 50%;
 }
 
 .frame-wrap .info-text {
-	padding: 0 70px;
+	padding: 0 15%;
 }
 
-.about-gtk {
-	padding: 100px 0 0;
-	border: none;
+/* First Row of Why Us */
+.us-first {
+	padding-bottom: 0;
+}
+
+/* First Row of Why Us */
+.us-second {
+	padding-top: 0;
 }
 
 .ws-wrap {
-	padding-top: 100px;
+	padding-top: 5%;
+}
+
+/* New Body Styles to be incorporated */
+.colored-background {
+	background-color: #F7EBD7;
 }

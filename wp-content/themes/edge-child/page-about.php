@@ -10,7 +10,8 @@
 
 get_header(); ?>
 
-	<main id="main">
+<div id="content">
+ <div class="container clearfix">
 		<section id="hello">
 			<div class="one-column clearfix hello">
 				<div class="hello-wrap">
@@ -27,10 +28,13 @@ get_header(); ?>
 					<h3>Dave Palmer</h3>
 					<p class="info-text">Cheesecake gummi bears gummi bears lemon drops sweet gummies gummi bears donut.</br>Topping sesame snaps carrot cake pie lollipop dessert liquorice. Wafer gummies topping tiramisu cake gingerbread pie.</p>
 				</div>
-		  </div>
+			</div><!--.one-column-->
 		</section>
-		<section id="why-us">
-			<div class="one-column clearfix gtk about-gtk">
+	 </div><!--.container-->
+  </div><!--.content -->
+	 <section id="why-us">
+		 <div class="colored-background clearfix">
+			<div class="one-column clearfix us us-first">
 					<div>
 						<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/whyUs.png" />
 					</div>
@@ -55,7 +59,7 @@ get_header(); ?>
 						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
 					</div>
 				</div>
-				<div class="one-column clearfix gtk">
+				<div class="one-column clearfix us us-second">
 					<div class="intros">
 						<p><i class="fa fa-paperclip" aria-hidden="true"></i></p>
 						<h3>Warm</h3>
@@ -76,18 +80,16 @@ get_header(); ?>
 						<h3>Connected</h3>
 						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
 					</div>
-				</div>
+				</div> <!--.one-column-->
+			</div> <!--.colored-background-->
 	  </section>
 		<section id="word-street">
+		 <div class="container clearfix">
 			<div class="one-column clearfix word-street">
 				<div class="ws-wrap">
 					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/wordOnTheStreet.png" />
 				</div>
-			</div>
+			</div> <!--.one-column -->
+		 </div> <!--.container -->
 		</section>
-
-	</main> <!-- #main -->
-
-</div> <!-- #primary -->
-
 <?php get_footer(); ?>

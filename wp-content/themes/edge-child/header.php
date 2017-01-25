@@ -99,18 +99,3 @@ $edge_settings = edge_get_theme_options(); ?>
 		} ?>
 </header> <!-- end #masthead -->
 <!-- Main Page Start ============================================= -->
-<div id="content">
-<div class="container clearfix">
-<?php
-if(is_front_page()){
-	do_action('edge_display_frontpage_features');
-}
-if(!is_home()){?>
-	<div class="page-header">
-		<!-- <h1 class="page-title"><?php echo edge_header_title(); ?></h1> -->
-		<!-- .page-title -->
-		<?php edge_breadcrumb(); ?>
-		<!-- .breadcrumb -->
-	</div>
-	<!-- .page-header -->
-<?php } ?>
