@@ -81,6 +81,10 @@ get_header(); ?>
 						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
 					</div>
 				</div> <!--.one-column-->
+				<div class="pdf-buttons clearfix">
+					<button class="btn-default us-btn-left">Download our Buyers Guide</button>
+					<button class="btn-default us-btn-right">Download our Sellers Guide</button>
+				</div>
 			</div> <!--.colored-background-->
 	  </section>
 		<section id="word-street">

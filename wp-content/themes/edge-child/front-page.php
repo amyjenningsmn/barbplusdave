@@ -34,7 +34,7 @@
 				 <h3>Connected</h3>
 				 <p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
 			 </div>
-			 <button class="btn-default gtk-btn">Get to Know Us!</button>
+			 <button class="btn-default us-btn">Get to Know Us!</button>
 		 </div><!--.one-column -->
 	 </div><!--.colored-background -->
  </section>

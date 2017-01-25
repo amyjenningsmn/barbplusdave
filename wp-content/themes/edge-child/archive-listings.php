@@ -9,50 +9,61 @@
  * @since Edge 1.0
  */
 
-get_header();
-	$edge_settings = edge_get_theme_options();
-	global $edge_content_layout;
-	if( $post ) {
-		$layout = get_post_meta( $post->ID, 'edge_sidebarlayout', true );
-	}
-	if( empty( $layout ) || is_archive() || is_search() || is_home() ) {
-		$layout = 'default';
-	}
-	if( 'default' == $layout ) { //Settings from customizer
-		if(($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_settings['edge_sidebar_layout_options'] != 'fullwidth')){ ?>
-			<!-- <div id="primary"> -->
-				<?php }
-	}?>
-				<main id="main" class="site-main clearfix">
-					<?php
+get_header(); ?>
+		<div class="container clearfix">
+		 <div class="one-column clearfix">
+			<main id="listings">
+ 			 <div class="main-heading">
+ 					 <h1>Our Listings</h1>
+ 			 </div>
+				 <?php
 					if( have_posts() ) {
 						while( have_posts() ) {
 							the_post();
 							$main_listing_image = get_field('main_listing_image');
 							$price = get_field('price');
+							$status = get_field('status');
 							$field = get_field_object('status');
 			        $value = $field['value'];
-			        $label = $field['choices'][ $value ];?>
-							<div class="listing-images">
-			          <?php if($main_listing_image) { ?>
-			            <img src="<?php echo $main_listing_image; ?>" />
-									<h3>Price: $<?php echo $price; ?></h3>
-									<h4>Status: <span class="status-<?php echo $value; ?>"><?php echo $label; ?></span></h4>
-			          <?php } ?>
-			        </div>
-
-							<?php get_template_part( 'content', get_post_format() );
-						}
-					}
-					else { ?>
-					<h2 class="entry-title"> <?php esc_html_e( 'No Posts Found.', 'edge' ); ?> </h2>
-					<?php } ?>
-				</main> <!-- #main -->
-				<?php get_template_part( 'pagination', 'none' );
-				if( 'default' == $layout ) { //Settings from customizer
-					if(($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_settings['edge_sidebar_layout_options'] != 'fullwidth')): ?>
-						<!-- </div>  #primary --> 
-						<?php endif;
-				}
-// get_sidebar();
-get_footer(); ?>
+			        $label = $field['choices'][ $value ];
+							$bedrooms = get_field('bedrooms');
+		 				 	$bathrooms = get_field('bathrooms');
+		 				 	$mls_number = get_field('mls_number');
+					?>
+					<section class="listings-each">
+						<div class="three-column clearfix">
+							 <div class="listing-image-wrap">
+								 <?php if($main_listing_image) { ?>
+ 								 <img class="listing-all-img" src="<?php echo $main_listing_image; ?>" />
+ 								 <?php if( $status == 'coming_soon' ) { ?>
+ 									 <span class="not-sold">Coming Soon!</span>
+ 								 <?php } ?>
+ 								 <?php if( $status == 'sale_pending' ) { ?>
+ 									 <span class="not-sold">Sale Pending</span>
+ 								 <?php } ?>
+ 								 <?php if( $status == 'sold' ) { ?>
+ 										<span class="sold">Sold!</span>
+ 								 <?php } ?>
+ 							 <?php } ?>
+ 							</div>
+						</div><!-- .three-column -->
+						<div class="listing-details">
+						 <ul>
+							 <li>Price: $<?php echo $price; ?></li>
+							 <li>Bedrooms: <?php echo $bedrooms; ?></li>
+							 <li>Bathrooms: <?php echo $bathrooms; ?></li>
+							 <li>MLS #: <?php echo $mls_number; ?></li>
+						 </ul>
+						</div><!--.listing-details -->
+						<?php get_template_part( 'content', get_post_format() );
+								}
+							}
+						else { ?>
+						<h2 class="entry-title"> <?php esc_html_e( 'No Listings Found.', 'edge' ); ?> </h2>
+						<?php } ?>
+						<?php get_template_part( 'pagination', 'none' ); ?>
+				 </section>
+			  </main>
+			 </div><!-- .one-column -->
+		</div><!-- .container whole-page -->
+		<?php get_footer(); ?>

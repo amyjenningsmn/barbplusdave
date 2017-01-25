@@ -36,9 +36,7 @@
 /*  # General Styles
 		================================================== */
 
-/* *** Notes *** */
-
-/*
+/* *** Notes ***
 
 #primary - use when get_sidebar();
 #content - use for padding top page from nav
@@ -53,6 +51,10 @@ h1, h2, h3 {
 	color: #991D25;
 }
 
+/* For sections full-width w/color */
+.colored-background {
+	background-color: #F7EBD7;
+}
 
 /*.one-column {
 	background-color: cyan;
@@ -252,7 +254,7 @@ a.slider-prev, a.slider-next {
 	}
 }
 
-.gtk-btn {
+.us-btn {
 	clear: both;
 	display: block;
   margin-left: auto;
@@ -395,16 +397,42 @@ div.blog-main-info {
 	padding-bottom: 0;
 }
 
-/* First Row of Why Us */
+/* Second Row of Why Us */
 .us-second {
 	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.pdf-buttons {
+	padding-bottom: 5%;
+}
+
+.us-btn-left{
+	display: inline;
+	float: left;
+	margin-left: 20%;
+	background-color: #991D25;
+	color: #fff;
+}
+
+.us-btn-right{
+	display: inline;
+	float: right;
+	margin-right: 20%;
+	background-color: #991D25;
+	color: #fff;
 }
 
 .ws-wrap {
 	padding-top: 5%;
 }
 
-/* New Body Styles to be incorporated */
-.colored-background {
-	background-color: #F7EBD7;
+/* #Listings Archive Page =================== */
+
+.listing-details {
+	padding: 9% 0 2%;
+}
+
+#listings .entry-meta {
+	display: none;
 }
