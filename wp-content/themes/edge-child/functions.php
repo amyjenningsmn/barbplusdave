@@ -37,6 +37,7 @@ function create_custom_post_types() {
                 'singular_name' => __( 'Blog Post' )
             //   ^^ human readable name for a single post
             ),
+						'taxonomies' => array( 'category' ),
             'public' => true,
             'has_archive' => true,
             // ^^ because we want it to have an archive

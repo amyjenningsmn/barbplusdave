@@ -8,42 +8,41 @@
  * @since Edge 1.0
  */
 
-get_header();
-	$edge_settings = edge_get_theme_options();
-	global $edge_content_layout;
-	if( $post ) {
-		$layout = get_post_meta( $post->ID, 'edge_sidebarlayout', true );
-	}
-	if( empty( $layout ) || is_archive() || is_search() || is_home() ) {
-		$layout = 'default';
-	}
-	if( 'default' == $layout ) { //Settings from customizer
-		if(($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_settings['edge_sidebar_layout_options'] != 'fullwidth')){ ?>
+get_header(); ?>
 
-<div id="primary">
-<?php }
-	}else{ // for page/ post
-		if(($layout != 'no-sidebar') && ($layout != 'full-width')){ ?>
-<div id="primary">
-	<?php }
-	}?>
-	<main id="main">
+<div id="content">
+ <div class="container clearfix">
+		<section id="contact-intro">
+			<div class="one-column clearfix contact-intro">
+				<div class="contact-frames-wrap">
+					<div class="three-column clearfix">
+						<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/circle1.png" />
+					</div>
+					<div class="three-column clearfix">
+						<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/circle1.png" />
+					</div>
+					<div class="three-column clearfix">
+						<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/circle1.png" />
+					</div>
+				</div><!--.contact-frames-wrap -->
+				<div class="contact-intro-text">
+					<div class="contact-intro-bpd-wrap">
+							<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bpdCursive.png" />
+					</div>
+					<div class="contact-intro-info">
+						<p>Here is some text letting them know if they want to contact you, you'd be delighted. Do they have questions? You'd love to answer them. It's all good in the hood. Mi Casa es Su Casa. We'll bring the cookies. Etc.
+						</p>
+					</div>
+				</div>
+			</div><!--.contact-intro-wrap -->
+		</section><!--#contact-intro-wrap -->
 	<?php
-	if( has_post_thumbnail() && $edge_settings['edge_display_page_featured_image']!=0) { ?>
-		<div class="post-image-content">
-			<figure class="post-featured-image">
-				<a href="<?php the_permalink();?>" title="<?php echo the_title_attribute('echo=0'); ?>">
-				<?php the_post_thumbnail(); ?>
-				</a>
-			</figure><!-- end.post-featured-image  -->
-		</div> <!-- end.post-image-content -->
-	<?php }
 	if( have_posts() ) {
 		while( have_posts() ) {
 			the_post(); ?>
 	<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<article>
-		<div class="entry-content clearfix">
+		<div class="entry-content bpd-form clearfix">
 			<?php the_content();
 				wp_link_pages( array(
 				'before'            => '<div style="clear: both;"></div><div class="pagination clearfix">'.__( 'Pages:', 'edge' ),
@@ -54,7 +53,6 @@ get_header();
 				'echo'              => 1
 				) ); ?>
 		</div> <!-- entry-content clearfix-->
-		<?php  comments_template(); ?>
 		</article>
 	</section>
 	<?php }
@@ -62,16 +60,7 @@ get_header();
 	<h1 class="entry-title"> <?php esc_html_e( 'No Posts Found.', 'edge' ); ?> </h1>
 	<?php
 	} ?>
-	</main> <!-- #main -->
-	<?php
-if( 'default' == $layout ) { //Settings from customizer
-	if(($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_settings['edge_sidebar_layout_options'] != 'fullwidth')): ?>
-</div> <!-- #primary -->
-<?php endif;
-}else{ // for page/post
-	if(($layout != 'no-sidebar') && ($layout != 'full-width')){
-		echo '</div><!-- #primary -->';
-	}
-}
-// get_sidebar();
-get_footer(); ?>
+
+	</div><!--.container -->
+</div><!--.content -->
+<?php get_footer(); ?>

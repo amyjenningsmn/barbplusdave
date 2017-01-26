@@ -9,11 +9,11 @@
  */
 
  get_header(); ?>
+  <div class="container clearfix">
+ 		<div class="one-column clearfix">
+      <section id="single-listings">
 
- 	<div id="primary" class="site-content">
- 		<div id="content" role="main">
-
- 			<?php while ( have_posts() ) : the_post();
+        <?php while ( have_posts() ) : the_post();
 
         $main_listing_image = get_field('main_listing_image');
         $price = get_field('price');
@@ -22,38 +22,53 @@
         $bedrooms = get_field('bedrooms');
         $bathrooms = get_field('bathrooms');
         $mls_number = get_field('mls_number');
+        $more = get_field('more_info_to_come');
         // $status = get_field('status');
         $field = get_field_object('status');
         $value = $field['value'];
         $label = $field['choices'][ $value ];
      ?>
-
-      <article class="listing">
-
-        <div class="listing-images">
-          <?php if($main_listing_image) { ?>
-            <img src="<?php echo $main_listing_image; ?>" />
-          <?php } ?>
-        </div>
-
-            <h2><?php the_title(); ?></h2>
-            <h3>Price: $<?php echo $price; ?></h3>
-            <h4>Property Type: <?php echo $property_type; ?></h4>
-            <h4>Status: <span class="status-<?php echo $value; ?>"><?php echo $label; ?></span></h4>
-            <h4>Stories: <?php echo $stories; ?></h4>
-            <h4>Bedrooms: <?php echo $bedrooms; ?></h4>
-            <h4>Bathrooms: <?php echo $bathrooms; ?></h4>
-            <h4>MLS Number: <?php echo $mls_number; ?></h4>
-
-            <?php the_content(); ?>
-
-        </article>
-
-
- 			<?php endwhile; // end of the loop. ?>
-
- 		</div><!-- #content -->
- 	</div><!-- #primary -->
-
-
- <?php get_footer(); ?>
+     <div class="main-heading">
+       <h1><?php echo the_title(); ?></h1>
+        <h2>$<?php echo $price ?><span class=" right status-<?php echo $value; ?>">Status: <?php echo $label; ?></span></h2>
+     </div>
+     <div class="listing-images">
+          <?php the_content(); ?>
+     </div>
+     <div class="main-heading sub">
+       <h2>Property Details</h2>
+     </div>
+      <div class="listing-single-info">
+       <div class="three-column">
+         <ul>
+           <li>Property Type: <?php echo $property_type; ?></li>
+           <li>Stories: <?php echo $stories; ?></li>
+           <li>Bedrooms: <?php echo $bedrooms; ?></li>
+           <li>Bathrooms: <?php echo $bathrooms; ?></li>
+           <li>MLS Number: <?php echo $mls_number; ?></li>
+         </ul>
+       </div>
+       <div class="three-column">
+         <ul>
+           <li>Property Type: <?php echo $property_type; ?></li>
+           <li>Stories: <?php echo $stories; ?></li>
+           <li>Bedrooms: <?php echo $bedrooms; ?></li>
+           <li>Bathrooms: <?php echo $bathrooms; ?></li>
+           <li>MLS Number: <?php echo $mls_number; ?></li>
+         </ul>
+       </div>
+       <div class="three-column">
+         <ul>
+           <li>Property Type: <?php echo $property_type; ?></li>
+           <li>Stories: <?php echo $stories; ?></li>
+           <li>Bedrooms: <?php echo $bedrooms; ?></li>
+           <li>Bathrooms: <?php echo $bathrooms; ?></li>
+           <li>MLS Number: <?php echo $mls_number; ?></li>
+         </ul>
+       </div>
+     </div>
+      <?php endwhile; // end of the loop. ?>
+      </section>
+ 		</div><!-- .one-column -->
+ 	</div><!-- .container -->
+<?php get_footer(); ?>

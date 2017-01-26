@@ -502,3 +502,48 @@ div.blog-main-info {
 		padding-top: 10%;
 	}
 }
+
+.cat-links a{
+	display: none;
+}
+
+
+
+/* #Contact Page =================== */
+
+.bpd-form {
+	padding: 0 20%;
+}
+
+.contact-intro-info {
+	padding: 0 20%;
+}
+
+/* #Single Blog Page =================== */
+
+.gallery {
+	clear: both;
+	float: left;
+	margin-top: 5%;
+}
+
+/* #Single Listing Page =================== */
+
+.single-listing-img {
+	display: block;
+	margin: 0 auto;
+}
+
+.right {
+padding-left: 58%;
+}
+
+#single-listings .gallery {
+	clear: both;
+	float: none;
+	margin: 3% 3% 0;
+}
+
+.main-heading.sub {
+	margin: 5% 0 0;
+}
