@@ -65,5 +65,5 @@ get_header(); ?>
 				 </section>
 			  </main>
 			 </div><!-- .one-column -->
-		</div><!-- .container whole-page -->
+		</div><!-- .container -->
 		<?php get_footer(); ?>

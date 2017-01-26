@@ -12,37 +12,35 @@
 
 // This is the default page Listings and Blog is using.
 
-get_header();
-	$edge_settings = edge_get_theme_options();
-	global $edge_content_layout;
-	if( $post ) {
-		$layout = get_post_meta( $post->ID, 'edge_sidebarlayout', true );
-	}
-	if( empty( $layout ) || is_archive() || is_search() || is_home() ) {
-		$layout = 'default';
-	}
-	if( 'default' == $layout ) { //Settings from customizer
-		if(($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_settings['edge_sidebar_layout_options'] != 'fullwidth')){ ?>
-			<div id="primary">
-				<?php }
-	}?>
-				<main id="main" class="site-main clearfix">
+get_header(); ?>
+
+<div class="container clearfix">
+ <div class="one-column clearfix">
+	<main id="blog">
+	 <div class="main-heading">
+			 <h1>What Are We Up to Now?</h1>
+	 </div>
 					<?php
 					if( have_posts() ) {
 						while( have_posts() ) {
 							the_post();
-							get_template_part( 'content', get_post_format() );
+							$main_post_image = get_field('main_post_image'); ?>
+							<section class="blog-each">
+								<div class="three-column clearfix">
+									 <div class="blog-image-wrap">
+										 <?php if($main_post_image) { ?>
+		 								 <img class="blog-all-img" src="<?php echo $main_post_image; ?>" />
+		 							 <?php } ?>
+								 </div><!--.listing-image-wrap -->
+								</div><!-- .three-column -->
+							<?php get_template_part( 'content', get_post_format() );
 						}
 					}
 					else { ?>
 					<h2 class="entry-title"> <?php esc_html_e( 'No Posts Found.', 'edge' ); ?> </h2>
 					<?php } ?>
-				</main> <!-- #main -->
-				<?php get_template_part( 'pagination', 'none' );
-				if( 'default' == $layout ) { //Settings from customizer
-					if(($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_settings['edge_sidebar_layout_options'] != 'fullwidth')): ?>
-						</div> <!-- #primary -->
-						<?php endif;
-				}
-get_sidebar();
-get_footer(); ?>
+					<?php get_template_part( 'pagination', 'none' );?>
+			</main> <!--#blog -->
+		</div> <!--.one-column -->
+	</div><!--.container -->
+<?php get_footer(); ?>
