@@ -247,7 +247,8 @@ function edge_scripts() {
 	/********* Adding Multiple Fonts ********************/
 	$edge_googlefont = array();
 	array_push( $edge_googlefont, 'Lato:400,300,700,400italic');
-	array_push( $edge_googlefont, 'Playfair+Display');
+	// array_push( $edge_googlefont, 'Playfair+Display');
+	array_push( $edge_googlefont, 'Raleway');
 	$edge_googlefonts = implode("|", $edge_googlefont);
 	wp_register_style( 'edge_google_fonts', '//fonts.googleapis.com/css?family='.$edge_googlefonts);
 	wp_enqueue_style( 'edge_google_fonts' );

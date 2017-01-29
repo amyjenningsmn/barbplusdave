@@ -1,2 +1,5 @@
-wp-content/uploads
-wp-content/plugins
+wp-content/uploads/
+wp-content/plugins/
+.DS_Store
+.htaccess
+wp-config.php

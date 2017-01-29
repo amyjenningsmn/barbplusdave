@@ -175,7 +175,8 @@ textarea {
 /* ----- #Headings  ----- */
 h1, h2, h3, h4, h5, h6 {
 	color: #333;
-	font-family: 'Playfair Display', sans-serif;
+	/*font-family: 'Playfair Display', sans-serif;*/
+	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	margin-top:0;
 	padding-bottom: 20px;
@@ -1275,7 +1276,8 @@ img#wpstats {
 	border-right: 1px solid #222;
 	display: block;
 	float: left;
-	font-family: 'Playfair Display', sans-serif;
+	/*font-family: 'Playfair Display', sans-serif;*/
+	font-family: 'Raleway', sans-serif;
 	font-size: 80px;
 	line-height: 80px;
 	margin-bottom: 10px;

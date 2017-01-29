@@ -43,9 +43,9 @@
 
 */
 
-body {
+/*body {
 	background: pink;
-}
+}*/
 
 h1, h2, h3 {
 	color: #991D25;
@@ -72,7 +72,7 @@ h1, h2, h3 {
 }
 
 .four-column {
-	background-color: yellow;
+	/*background-color: yellow;*/
 }
 
 
@@ -87,6 +87,7 @@ h1, h2, h3 {
     display: block;
 		padding-bottom: 0;
 		text-align: left;
+		letter-spacing: .75px;
 }
 
 #sticky_header {
@@ -96,6 +97,19 @@ h1, h2, h3 {
 
 .main-navigation a {
 	color: #F7EBD7;
+}
+
+.top-header .widget_contact {
+	padding-top: 45px;
+}
+
+.top-header .social-links {
+	margin-top: 45px;
+}
+
+.top-header .social-links a{
+	font-size: 20px;
+	margin-left: 15px;
 }
 
 /*  # Footer Override Styles
