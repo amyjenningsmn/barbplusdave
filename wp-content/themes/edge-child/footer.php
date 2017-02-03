@@ -41,7 +41,7 @@ if($edge_settings['edge_blog_layout'] == 'photography_layout' && !is_page() && !
     <div class="container">
       <div class="three-column phone">
         <img class="love"src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/love.png" />
-        <img class="truck"src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/truck.png" />
+        <img class="red-house"src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/redHouse.png" />
         <div class="bullhorn-wrap">
           <div class="bullhorn">
             <i class="fa fa-bullhorn" aria-hidden="true"></i>

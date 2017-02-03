@@ -47,6 +47,14 @@
 	background: pink;
 }*/
 
+/* ----- #Headings  ----- */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	margin-top:0;
+	padding-bottom: 20px;
+}
+
 h1, h2, h3 {
 	color: #991D25;
 }
@@ -162,8 +170,8 @@ h1, h2, h3 {
 	border-right: 1px solid #C69F70;
 }*/
 
-.truck {
-	width: 200px;
+.red-house {
+	width: 65px;
 }
 
 .love {

@@ -106,6 +106,10 @@
 					<div class="colored-background clearfix">
 					 <div class="one-column clearfix insta-wrap">
 						 <h2>The Latest from Instagram</h2>
+             <!-- Testing ajax call -->
+             <!-- <button class="gif">Get Gif Test</button>
+             <div class="gifHere"></div> -->
+             <!-- End Test -->
 						 <?php echo do_shortcode( '[instagram-feed]' ); ?>
 					 </div><!-- .one-column -->
 				  </div><!-- .colored-background -->

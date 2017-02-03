@@ -19,12 +19,12 @@ get_header(); ?>
 					<img class="tag-sub" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/niceToMeetYou.png" />
 				</div>
 				<div class="frame-wrap">
-					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/rectangle2.png" />
+					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/barbPicCircle.png" />
 					<h3>Barb Palmer</h3>
 					<p class="info-text">Cheesecake gummi bears gummi bears lemon drops sweet gummies gummi bears donut. Bonbon candy canes tart croissant apple pie soufflé bear claw. </br>Topping sesame snaps carrot cake pie lollipop dessert liquorice. Wafer gummies topping tiramisu cake gingerbread pie. Macaroon powder jujubes bear claw.</p>
 				</div>
 				<div class="frame-wrap">
-					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/rectangle2.png" />
+					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/davePicCircle.png" />
 					<h3>Dave Palmer</h3>
 					<p class="info-text">Cheesecake gummi bears gummi bears lemon drops sweet gummies gummi bears donut.</br>Topping sesame snaps carrot cake pie lollipop dessert liquorice. Wafer gummies topping tiramisu cake gingerbread pie.</p>
 				</div>
