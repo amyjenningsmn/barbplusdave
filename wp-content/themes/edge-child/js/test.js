@@ -2,12 +2,12 @@ console.log("Is this thing on?");
 
 jQuery(document).ready( function($) {
 
-	$.ajax({
-		url: "http://localhost:8888/barbplusdave/",
-		success: function( data ) {
-			alert( 'Your home page has ' + $(data).find('div').length + ' div elements.');
-		}
-	})
+	// $.ajax({
+	// 	url: "http://localhost:8888/barbplusdave/",
+	// 	success: function( data ) {
+	// 		alert( 'Your home page has ' + $(data).find('div').length + ' div elements.');
+	// 	}
+	// })
 
   $(".gif").on("click", function(){
 			   $.get('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&rating=pg').done(function(response){

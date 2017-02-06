@@ -91,6 +91,14 @@ h1, h2, h3 {
 	background-color: #F7EBD7;
 }
 
+#site-title {
+	display: none;
+}
+
+#site-description {
+	padding: 5px 0 0;
+}
+
 .top-header .widget-title {
     display: block;
 		padding-bottom: 0;
@@ -111,6 +119,10 @@ h1, h2, h3 {
 	padding-top: 45px;
 }
 
+.top-header .widget_contact ul li{
+	clear: both;
+}
+
 .top-header .social-links {
 	margin-top: 45px;
 }
@@ -119,6 +131,11 @@ h1, h2, h3 {
 	font-size: 20px;
 	margin-left: 15px;
 }
+
+/*.realtor {
+	color: #991D25;
+	font-size: 1.1em;
+}*/
 
 /*  # Footer Override Styles
 ================================================== */
@@ -129,36 +146,53 @@ h1, h2, h3 {
 	/*border-top: 5px solid rgba(162, 162, 162, 0.75);*/
 }
 
+
+.contact {
+	background-image: url("../edge-child/assets/images/rectangle2.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-align: left;
+	line-height: 5px;
+}
+
+.contact-wrap {
+	position: relative;
+	height: 180px;
+}
+
+.contact-info {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	width: 320px;
+}
+
 .lar {
 	width: 100px;
 	float: left;
 }
 
-.contact {
-	text-align: left;
-	line-height: 5px;
-}
-
-.contact h3 {
+.contact-info h3 {
 	font-size: 1.4em;
 	line-height: 5px;
 	padding-top: 1.5em;
 
 }
-.contact h4 {
+.contact-info h4 {
 	font-size: 1.2em;
 	line-height: 5px;
-
 }
 
 .mls {
 	width: 70px;
 	float: left;
+	padding-top: 20px;
 }
 
 .equal {
 	width: 30px;
 	float: left;
+	padding-top: 20px;
 }
 
 .letter-space {
@@ -170,13 +204,7 @@ h1, h2, h3 {
 	border-right: 1px solid #C69F70;
 }*/
 
-.red-house {
-	width: 65px;
-}
 
-.love {
-	width: 120px;
-}
 
 .bullhorn-wrap {
 	position: relative;
