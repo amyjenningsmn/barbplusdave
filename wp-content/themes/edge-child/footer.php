@@ -28,40 +28,50 @@ endif;
 			<div class="three-column contact">
 				<div class="contact-wrap">
 					<div class="contact-info">
-
-				<img class="lar" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/lar.png" />
-				<h3>Barb Palmer</h3>
-				<h4>Realtor</h4>
-				<p>4316 Upton Ave S, Suite 300</p>
-				<p>Minneapolis, MN 55410</p></br>
-				<p class="letter-space"> barbpalmerrealtor@gmail.com</p>
-				<p class="letter-space">LakesAreaRealty.com</p>
-			</div><!-- .contact-info -->
-		</div><!-- .contact-wrap -->
-				<img class="mls" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mls.png" />
-				<img class="equal" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/equalHousing.png" />
+						<img class="lar" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/lar.png" />
+						<h3>Barb Palmer</h3>
+						<h4>Realtor</h4>
+						<p>4316 Upton Ave S, Suite 300</p>
+						<p>Minneapolis, MN 55410</p></br>
+						<p class="letter-space"> barbpalmerrealtor@gmail.com</p>
+						<p class="letter-space">LakesAreaRealty.com</p>
+						<img class="mls" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mls.png" />
+						<img class="equal" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/equalHousing.png" />
+					</div><!-- .contact-info -->
+				</div><!-- .contact-wrap -->
 			</div><!-- end .three-column contact-->
 			<div class="three-column phone">
-				<img class="tlh"src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/tlh.png" />
-				<div class="bullhorn-wrap">
-					<div class="bullhorn">
-						<i class="fa fa-bullhorn" aria-hidden="true"></i>
-					</div>
-					<div class="phone-number">
-						<p><a href="tel:6128770530" title="612-877-0530">612-877-0530</a></p>
-						<p>Call or Text!</p>
-					</div>
-				</div><!-- end .bullhorn-wrap-->
+					<div class="phone-info">
+						<?php
+						if($edge_settings['edge_buttom_social_icons'] == 0):
+							do_action('social_links');
+						endif; ?>
+						<div class="bullhorn-wrap">
+							<div class="bullhorn">
+								<img class="red-house" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/redHouse.png" />
+							</div>
+							<div class="phone-number">
+								<p><a href="tel:6128770530" title="612-877-0530">612-877-0530</a></p>
+								<p>Call or Text!</p>
+							</div>
+							<div class="love">
+								<img class="love-word" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/love.png" />
+							</div>
+						</div><!--end .bullhorn-wrap-->
+				</div>
 			</div><!-- end .three-column .phone-->
-			<div class="three-column">
-				<?php
-				if($edge_settings['edge_buttom_social_icons'] == 0):
-					do_action('social_links');
-				endif; ?>
-				<p>Need to include a Newsletter Signup here</p></br></br></br>
-				<p>&copy; 2017 Barb Plus Dave</p>
+			<div class="three-column newsletter">
+				<div class="newsletter-wrap">
+					<div class="newsletter-info">
+						<p>Want to subscribe to our newsletter?</p>
+						<?php echo do_shortcode( '[mc4wp_form id="172"]' ); ?>
+					</div>
+				</div>
 			</div><!-- end .three-column -->
-			<div style="clear:both;"></div>
+			<div class="one-column clearfix">
+				<p>&copy; 2017 Barb Plus Dave</p>
+			</div>
+		<div style="clear:both;"></div>
 		</div> <!-- end .container -->
 	</div> <!-- end .site-info -->
 	<?php

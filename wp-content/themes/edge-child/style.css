@@ -74,10 +74,10 @@ h1, h2, h3 {
 		padding: 15px;
 }
 
-.three-column {
-	/*background-color: pink;*/
+/*.three-column {
+	background-color: pink;
 	padding: 15px;
-}
+}*/
 
 .four-column {
 	/*background-color: yellow;*/
@@ -147,24 +147,58 @@ h1, h2, h3 {
 }
 
 
-.contact {
-	background-image: url("../edge-child/assets/images/rectangle2.png");
+.contact, .newsletter {
+	background-image: url("../edge-child/assets/images/rectangle2copy.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	text-align: left;
 	line-height: 5px;
+	height: 250px;
 }
 
-.contact-wrap {
+.phone {
+	background-image: url("../edge-child/assets/images/rectangle1copycopy.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-align: left;
+	line-height: 5px;
+	height: 250px;
+	position: relative;
+}
+
+.contact-wrap, .newsletter-wrap {
 	position: relative;
 	height: 180px;
 }
 
-.contact-info {
+.contact-info, .newsletter-info {
 	position: absolute;
-	top: 10px;
+	top: 20px;
 	left: 20px;
 	width: 320px;
+}
+
+.phone-info {
+	position: absolute;
+	top: 40px;
+	left: 33px;
+	width: 320px;
+}
+
+.newsletter-info {
+	top: 47px;
+	left: 15px;
+	width: 320px;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.mc4wp-form-fields p input {
+	margin: 10px auto 0;
+}
+
+.mc4wp-form-fields p label {
+	margin: 0 auto;
 }
 
 .lar {
@@ -184,40 +218,43 @@ h1, h2, h3 {
 }
 
 .mls {
-	width: 70px;
-	float: left;
-	padding-top: 20px;
+	position: absolute;
+	bottom: -5px;
+	right: 32px;
+	width: 60px;
 }
 
 .equal {
-	width: 30px;
-	float: left;
-	padding-top: 20px;
+	position: absolute;
+	bottom: -5px;
+	right: 5px;
+	width: 25px;
 }
 
 .letter-space {
 	letter-spacing: 2px;
 }
 
-/*.phone {
-	border-left: 1px solid #C69F70;
-	border-right: 1px solid #C69F70;
-}*/
 
-
+.site-info .social-links {
+	padding: 3% 0 0 28%;
+}
 
 .bullhorn-wrap {
 	position: relative;
 	height: 100px;
-	background-color: #fff;
-	border: 2px solid #C69F70;
-	border-radius: 6px;
+	/*background-color: #fff;
+	border-radius: 6px;*/
 }
 
 .bullhorn {
 	position: absolute;
-	top: 25px;
-	left: 90px;
+	left: 38px;
+	top: -4px;
+}
+
+.red-house {
+	height: 60px;
 }
 
 .bullhorn i {
@@ -226,11 +263,20 @@ h1, h2, h3 {
 
 .phone-number {
 	position: absolute;
-	top: 34px;
-	left: 150px;
-	/*background-color: cyan;*/
+	top: 20px;
+	left: 111px;
 	line-height: 5px;
+	text-align: center;
 }
+
+.love-word {
+	position: absolute;
+	height: 65px;
+	left: 205px;
+}
+
+
+
 
 /*.copyright {
 	clear: both;
