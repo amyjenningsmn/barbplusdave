@@ -69,7 +69,7 @@ endif;
 				</div>
 			</div><!-- end .three-column -->
 			<div class="one-column clearfix">
-				<p>&copy; 2017 Barb Plus Dave</p>
+				<p class="copy">&copy; 2017 Barb Plus Dave</p>
 			</div>
 		<div style="clear:both;"></div>
 		</div> <!-- end .container -->

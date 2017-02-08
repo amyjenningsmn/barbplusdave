@@ -201,6 +201,12 @@ h1, h2, h3 {
 	margin: 0 auto;
 }
 
+.mc4wp-alert p {
+	color: #fff;
+	padding-top: 15px;
+	line-height: 25px;
+}
+
 .lar {
 	width: 100px;
 	float: left;
@@ -249,7 +255,7 @@ h1, h2, h3 {
 
 .bullhorn {
 	position: absolute;
-	left: 38px;
+	left: 41px;
 	top: -4px;
 }
 
@@ -272,15 +278,12 @@ h1, h2, h3 {
 .love-word {
 	position: absolute;
 	height: 65px;
-	left: 205px;
+	left: 203px;
 }
 
-
-
-
-/*.copyright {
-	clear: both;
-}*/
+.copy {
+	letter-spacing: 1.5px;
+}
 
 /* need media queries */
 
