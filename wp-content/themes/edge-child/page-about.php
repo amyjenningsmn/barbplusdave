@@ -21,13 +21,18 @@ get_header(); ?>
 				<div class="frame-wrap">
 					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/barbPicCircle.png" />
 					<h3>Barb Palmer</h3>
-					<p class="info-text">Cheesecake gummi bears gummi bears lemon drops sweet gummies gummi bears donut. Bonbon candy canes tart croissant apple pie soufflé bear claw. </br>Topping sesame snaps carrot cake pie lollipop dessert liquorice. Wafer gummies topping tiramisu cake gingerbread pie. Macaroon powder jujubes bear claw.</p>
+					<p class="info-text">Barb’s contagious energy and savvy business skills have built her a successful and rewarding real estate practice all over the Twin Cities. She is dedicated to providing top notch service while creating an experience that is fun beyond expectations!</p>
+          <p class="info-text">Buyers and Sellers appreciate the way she guides them through the process with dedication, assurance and joy. Referrals from past clients and recommendations from family, friends, and colleagues have kept her business flourishing.</p>
+          <p class="info-text">When she’s not hard at work helping clients with their real estate needs, you'll most likely find her enjoying local music, walking around her beloved Lake Harriet, or sharing good food with friends. She is a long time Minnesota resident and will be thrilled to show you around her town.  
+          </p>
 				</div>
 				<div class="frame-wrap">
 					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/davePicCircle.png" />
 					<h3>Dave Palmer</h3>
-					<p class="info-text">Cheesecake gummi bears gummi bears lemon drops sweet gummies gummi bears donut.</br>Topping sesame snaps carrot cake pie lollipop dessert liquorice. Wafer gummies topping tiramisu cake gingerbread pie.</p>
-				</div>
+					<p class="info-text">Dave is Assistant to Barb, dedicated to providing honest, detailed service to all clients, making sure facts are communicated clearly, respecting both sides of any transaction.</p>
+          <p class="info-text">Dave comes to real estate after working for 36 years as a Camp Director, and as a leader in non-profit operations. Along the way he’s acquired a wealth of knowledge in negotiating, and his experience in construction has been critical for making decisions in multi-million dollar projects. Dave is perhaps most valued as a colleague, mentor and friend.</p>
+          <p class="info-text">Locally grown, Dave enjoys all the area has to offer. Not surprisingly, Dave loves camping and often disappears deep into the woods…but not until after the closing!</p>
+        </div>
 			</div><!--.one-column-->
 		</section>
 	 </div><!--.container-->
@@ -62,22 +67,22 @@ get_header(); ?>
 				<div class="one-column clearfix us us-second">
 					<div class="intros">
 						<p><i class="fa fa-paperclip" aria-hidden="true"></i></p>
-						<h3>Warm</h3>
+						<h3>Smart</h3>
 						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
 					</div>
 					<div class="intros">
 						<p><i class="fa fa-diamond" aria-hidden="true"></i></p>
-						<h3>Cool</h3>
+						<h3>Buy</h3>
 						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie. Muffin sweet tart apple pie. Muffin sweet tart apple pie.</p>
 					</div>
 					<div class="intros">
 						<p><i class="fa fa-fort-awesome" aria-hidden="true"></i></p>
-						<h3>Calm</h3>
+						<h3>Sell</h3>
 						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
 					</div>
 					<div class="intros">
-						<p><i class="fa fa-calculator" aria-hidden="true"></i></p>
-						<h3>Connected</h3>
+						<p><i class="fa fa-smile-o" aria-hidden="true"></i></p>
+						<h3>Happy</h3>
 						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
 					</div>
 				</div> <!--.one-column-->

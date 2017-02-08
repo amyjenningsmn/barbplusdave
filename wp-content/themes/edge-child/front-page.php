@@ -16,7 +16,7 @@
 				</div>
 				<div class="bpd-welcome-wrap">
 					<h3>Barb Palmer</h3>
-					<h4 class="welcome-text">Your realtor extraordinaire, whether buying or selling, working to make your home dreams come true!</h4>
+					<h4 class="welcome-text">Realtor extraordinaire, whether buying or selling, working to make your home dreams come true!</h4>
 				</div>
 				<div class="bpd-welcome-wrap">
 					<h3>Dave Palmer</h3>
@@ -51,7 +51,7 @@
 				 <h3>Connected</h3>
 				 <p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
 			 </div>
-			 <button class="btn-default us-btn">Get to Know Us!</button>
+			 <button class="btn-default us-btn"><a href="http://localhost:8888/barbplusdave/about/">Get to Know Us!</a></button>
 		 </div><!--.one-column -->
 	 </div><!--.colored-background -->
  </section>
@@ -60,8 +60,7 @@
 		 <section class="listings-home">
 			 <div class="three-column entry-content clearfix">
 				 <div class="main-heading">
-					 <h2>Our Listings<a class="more" href="#">see all <span>&rsaquo;</span></a></h2>
-					 <!-- need permalink for all listings -->
+					 <h2>Our Listings<a class="more" href="http://localhost:8888/barbplusdave/listings/">see all <span>&rsaquo;</span></a></h2>
 				 </div>
 				 <?php query_posts('posts_per_page=2&post_type=listings'); ?>
 				 <?php while ( have_posts() ) : the_post();
@@ -100,7 +99,7 @@
 						 <section class="blog-home">
 							 <div class="two-column home-blog entry-content clearfix">
 								 <div class="main-heading">
-									 <h2>What are we up to now?<a class="more" href="#">more <span>&rsaquo;</span></a></h2>
+									 <h2>What are we up to now?<a class="more" href="http://localhost:8888/barbplusdave/blog/">more <span>&rsaquo;</span></a></h2>
 								 </div>
 								 <?php query_posts('posts_per_page=2&post_type=blog'); ?>
 								 <?php while ( have_posts() ) : the_post();

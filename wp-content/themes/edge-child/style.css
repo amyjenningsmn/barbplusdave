@@ -6,7 +6,6 @@
  Author URI:   http://amyjenningsdev.com
  Template:     edge
  Version:      1.1.1.1
- Tags:         from edge: threaded-comments, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, sticky-post, theme-options, translation-ready, post-formats, custom-logo, footer-widgets, blog, e-commerce, news, photography, portfolio
  Text Domain:  edge-child
 */
 
@@ -382,7 +381,9 @@ a.slider-prev, a.slider-next {
   margin-left: auto;
   margin-right: auto;
 	background-color: #991D25;
-	color: #F7EBD7;
+}
+.us-btn a {
+	color: #fff;
 }
 
 /* ## Our Listings & Blog Sections =================== */
