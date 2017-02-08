@@ -21,7 +21,19 @@ $edge_settings = edge_get_theme_options(); ?>
 <div id="page" class="hfeed site">
 <!-- Masthead ============================================= -->
 <header id="masthead" class="site-header">
-<?php do_action('edge_header_image');?>
+	<div class="custom-header">
+		<div class="custom-header-media">
+		<?php if ( function_exists( 'the_custom_header_markup' ) ) {
+			if ( is_header_video_active() && ( has_header_video() || is_customize_preview() ) ) {
+				the_custom_header_markup();
+			}else{ ?>
+				<a href="<?php echo esc_url(home_url('/'));?>"><img src="<?php header_image(); ?>" class="header-image" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display'));?>" /> </a>
+			<?php }
+		} else { ?>
+		<a href="<?php echo esc_url(home_url('/'));?>"><img src="<?php header_image(); ?>" class="header-image" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display'));?>" /> </a>
+		<?php } ?>
+		</div>
+	</div>
 		<div class="top-header">
 			<div class="container clearfix">
 				<?php
@@ -39,7 +51,7 @@ $edge_settings = edge_get_theme_options(); ?>
 		<!-- Main Header============================================= -->
 				<div id="sticky_header">
 					<div class="container clearfix">
-						<div class="menu-toggle">
+						<div class="menu-toggle">			
 							<div class="line-one"></div>
 				  			<div class="line-two"></div>
 				  			<div class="line-three"></div>
@@ -71,7 +83,7 @@ $edge_settings = edge_get_theme_options(); ?>
 							<div id="search-box" class="clearfix">
 								<?php get_search_form();?>
 							</div>  <!-- end #search-box -->
-						<?php }
+						<?php } 
 
 			echo '</div> <!-- end .container -->
 			</div> <!-- end #sticky_header -->';
@@ -101,7 +113,7 @@ $edge_settings = edge_get_theme_options(); ?>
 <!-- Main Page Start ============================================= -->
 <div id="content">
 <div class="container clearfix">
-<?php
+<?php 
 if(is_front_page()){
 	do_action('edge_display_frontpage_features');
 }

@@ -125,6 +125,4 @@ $wp_customize->add_control( 'edge_theme_options[edge_social_linkedin]', array(
 	'type' => 'text',
 	)
 );
-
-
 	?>

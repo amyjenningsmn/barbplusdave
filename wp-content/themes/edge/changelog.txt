@@ -1,4 +1,20 @@
 == CHANGE LOG ==
+= 1.1.1.5 =
+	- Fix - Invalid error with reset button fixed
+	- Fix - header image link added as it was removed from below version 1.1.1.3
+	- Fix - Block quote big letter issue and multi sticky issue fixed
+
+= 1.1.1.4 =
+	- Fix - Fixed double header image and overlapping issue
+
+= 1.1.1.3 =
+	- New - Header Video in responsive device fixed
+
+= 1.1.1.2 =
+	- New - Instagram feed added
+	- New - Support Video/ Youtube for WP version 4.7
+	- Fix - Sticky Menu overlap with admin bar fixed
+
 = 1.1.1.1 =
 	- Update - Upgrade to Pro button removed from top of customizer and added on section
 	- Updated - Custom CSS added to support core for WP version 4.7

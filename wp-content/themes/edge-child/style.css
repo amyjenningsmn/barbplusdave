@@ -71,7 +71,7 @@ h1, h2, h3 {
 .two-column, .two-column-full-width {
     width: 65%;
 		/*background-color: tomato;*/
-		padding: 15px;
+		padding: 0 15px 15px;
 }
 
 /*.three-column {
@@ -315,6 +315,29 @@ a.slider-prev, a.slider-next {
 
 /*  # Home Page Styles
 ================================================== */
+
+/* ## Welcome Section =================== */
+.welcome {
+	padding: 5% 0 8%;
+}
+
+.bpd-welcome-wrap {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+.welcome-text {
+	padding: 0 20%;
+}
+
+.bpd-welcome-wrap h3 {
+	padding-bottom: 0;
+}
+.bpd-welcome-wrap h4 {
+	text-align: center;
+	font-size: 1.2em;
+}
 
 
 /* ## Get to Know Us Section =================== */

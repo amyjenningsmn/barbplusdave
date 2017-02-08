@@ -75,5 +75,12 @@ jQuery( function() {
 		  });
 
 		});
+		// Variables and DOM Caching.
+		var $body = jQuery( 'body' );
+
+		// Add header video class after the video is loaded.
+		jQuery( document ).on( 'wp-custom-header-video-loaded', function() {
+			$body.addClass( 'has-header-video' );
+		});
 
 } );

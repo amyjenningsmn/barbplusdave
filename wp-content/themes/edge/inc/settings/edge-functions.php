@@ -87,6 +87,10 @@ function edge_body_class($classes) {
 	}elseif($edge_blog_layout =='single_column_blog'){
 		$classes[] = 'single_column_blog';
 	}
+	// Add a class if there is a custom header.
+	if ( has_header_image() ) {
+		$classes[] = 'has-header-image';
+	}
 	return $classes;
 }
 add_filter('body_class', 'edge_body_class');
@@ -232,7 +236,7 @@ function edge_scripts() {
 	wp_enqueue_style('font-awesome', get_template_directory_uri().'/assets/font-awesome/css/font-awesome.min.css');
 	wp_enqueue_script('jquery_cycle_all', get_template_directory_uri().'/js/jquery.cycle.all.js', array('jquery'), false, true);
 	wp_enqueue_script('edge_slider', get_template_directory_uri().'/js/edge-slider-setting.js', array('jquery_cycle_all'), false, true);
-	wp_enqueue_script('edge-main', get_template_directory_uri().'/js/edge-main.js', array('jquery'), false, true);
+	wp_enqueue_script('edge-main', get_template_directory_uri().'/js/edge-main.js', array('jquery'));
 	$edge_stick_menu = $edge_settings['edge_stick_menu'];
 	if($edge_stick_menu != 1):
 		wp_enqueue_script('jquery_sticky', get_template_directory_uri().'/assets/sticky/jquery.sticky.min.js', array('jquery'), false, true);
@@ -247,8 +251,7 @@ function edge_scripts() {
 	/********* Adding Multiple Fonts ********************/
 	$edge_googlefont = array();
 	array_push( $edge_googlefont, 'Lato:400,300,700,400italic');
-	// array_push( $edge_googlefont, 'Playfair+Display');
-	array_push( $edge_googlefont, 'Raleway');
+	array_push( $edge_googlefont, 'Playfair+Display');
 	$edge_googlefonts = implode("|", $edge_googlefont);
 	wp_register_style( 'edge_google_fonts', '//fonts.googleapis.com/css?family='.$edge_googlefonts);
 	wp_enqueue_style( 'edge_google_fonts' );

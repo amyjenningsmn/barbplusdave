@@ -108,6 +108,17 @@ $edge_settings = edge_get_theme_options();
 		'section' => 'edge_custom_header',
 		'type' => 'checkbox',
 	));
+	$wp_customize->add_setting( 'edge_theme_options[edge_instagram_feed_display]', array(
+		'default' => $edge_settings['edge_instagram_feed_display'],
+		'sanitize_callback' => 'edge_checkbox_integer',
+		'type' => 'option',
+	));
+	$wp_customize->add_control( 'edge_theme_options[edge_instagram_feed_display]', array(
+		'priority'=>49,
+		'label' => __('Display Instagram Full Width', 'edge'),
+		'section' => 'edge_custom_header',
+		'type' => 'checkbox',
+	));
 	$wp_customize->add_setting( 'edge_theme_options[edge_reset_all]', array(
 		'default' => $edge_settings['edge_reset_all'],
 		'capability' => 'edit_theme_options',

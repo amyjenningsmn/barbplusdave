@@ -33,6 +33,7 @@ if(!function_exists('edge_get_option_defaults_values')):
 			'edge_secondary_url' => '',
 			'edge_slider_content_bg_color' => 'off',
 			'edge_display_page_featured_image'=>0,
+			'edge_instagram_feed_display'=>1,
 
 			/* Slider Settings */
 			'edge_slider_type'	=> 'default_slider',

@@ -8,6 +8,23 @@
  */
 
  get_header(); ?>
+ <div class="container clearfix">
+		<section id="welcome">
+			<div class="one-column clearfix welcome">
+				<div class="bpd-wrap clearfix">
+					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bpdCursive.png" />
+				</div>
+				<div class="bpd-welcome-wrap">
+					<h3>Barb Palmer</h3>
+					<h4 class="welcome-text">Your realtor extraordinaire, whether buying or selling, working to make your home dreams come true!</h4>
+				</div>
+				<div class="bpd-welcome-wrap">
+					<h3>Dave Palmer</h3>
+					<h4 class="welcome-text">Assistant to Barb in all things home: details, paperwork, and of course, client happiness!</h4>
+				</div>
+			</div><!--.one-column-->
+		</section>
+	 </div><!--.container-->
  <section id="get-to-know-us">
 	 <div class="colored-background clearfix">
 		 <div class="one-column clearfix us">

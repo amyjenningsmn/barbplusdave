@@ -269,13 +269,4 @@ if ( ! function_exists( 'edge_the_custom_logo' ) ) :
  	    }
  	} 
  	endif;
-
-/* Header Image */
-function edge_header_image_display(){
-	$edge_header_image = get_header_image();
-	if(!empty($edge_header_image)){ ?>
-		<a href="<?php echo esc_url(home_url('/'));?>"><img src="<?php echo esc_url($edge_header_image);?>" class="header-image" width="<?php echo get_custom_header()->width;?>" height="<?php echo get_custom_header()->height;?>" alt="<?php echo esc_attr(get_bloginfo('name', 'display'));?>"> </a>
-	<?php }
-}
-add_action('edge_header_image','edge_header_image_display');
 ?>

@@ -126,10 +126,10 @@ function edge_custom_header_setup() {
 		'flex-width'             => true,
 		'random-default'         => false,
 		'header-text'				 => false,
+		'video'						 => true,
 		'uploads'				 => true,
 		'wp-head-callback'       => '',
 		'admin-preview-callback' => 'edge_admin_header_image',
-		'default-image' => '',
 	);
 	add_theme_support( 'custom-header', $args );
 }
@@ -149,4 +149,5 @@ function edge_footer_menu_section(){
 	endif;
 }
 add_action( 'edge_footer_menu', 'edge_footer_menu_section' );
+
 ?>

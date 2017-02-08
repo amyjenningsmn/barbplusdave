@@ -50,6 +50,8 @@ function edge_sanitize_page( $input ) {
 function edge_reset_alls( $input ) {
 	if ( $input == 1 ) {
 		delete_option( 'edge_theme_options');
+		$input=0;
+		return $input;
 	} 
 	else {
 		return '';

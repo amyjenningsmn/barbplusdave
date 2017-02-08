@@ -22,6 +22,17 @@ if($edge_settings['edge_blog_layout'] == 'photography_layout' && !is_page() && !
 <!-- Footer Start ============================================= -->
 <footer id="colophon" class="site-footer clearfix">
 <?php
+if ( is_front_page() && is_home() ) {
+	if ((function_exists('display_instagram')) && $edge_settings['edge_instagram_feed_display'] !=0){
+		echo do_shortcode('[instagram-feed]');
+	}// Default homepage
+} elseif ( is_front_page()){
+	if ((function_exists('display_instagram')) && $edge_settings['edge_instagram_feed_display'] !=0){
+		echo do_shortcode('[instagram-feed]');
+	}//Static homepage
+} else {
+//silence is golden
+}
 $footer_column = $edge_settings['edge_footer_column_section'];
 	if( is_active_sidebar( 'edge_footer_1' ) || is_active_sidebar( 'edge_footer_2' ) || is_active_sidebar( 'edge_footer_3' ) || is_active_sidebar( 'edge_footer_4' )) { ?>
 	<div class="widget-wrap">
