@@ -30,7 +30,8 @@
 		#454951 - outer space
 		#991D25 - vivid auburn
 		#F7EBD7 - moccasin
-		#C6C6C6 - lavender gray  */
+		#C6C6C6 - lavender gray
+		#C69f70; - edge default */
 
 /*  # General Styles
 		================================================== */
@@ -281,7 +282,21 @@ h1, h2, h3 {
 }
 
 .copy {
+	font-size: .8em;
 	letter-spacing: 1.5px;
+	color: #991D25;
+}
+
+.copy a {
+	color: #991D25;
+}
+
+.copy a:hover, a:focus {
+	color: #fff;
+}
+
+.grey {
+	color: #454951;
 }
 
 /* need media queries */
@@ -530,6 +545,10 @@ div.blog-main-info {
 	padding-bottom: 5%;
 }
 
+.pdf-buttons a{
+	color: #fff;
+}
+
 .us-btn-left{
 	display: inline;
 	float: left;
@@ -548,6 +567,11 @@ div.blog-main-info {
 
 .ws-wrap {
 	padding-top: 5%;
+}
+
+.testimonial_rotator.template-default .has-image .img img, .testimonial_rotator_single.has-image.template-default .img img {
+	margin-left: 20%;
+	border-radius: 50%;
 }
 
 /* #Listings Archive Page =================== */
@@ -640,6 +664,12 @@ div.blog-main-info {
 
 .contact-intro-info {
 	padding: 0 20%;
+}
+
+.contact-intro-info p {
+	text-align: center;
+	line-height: 1.1em;
+
 }
 
 /* #Single Blog Page =================== */

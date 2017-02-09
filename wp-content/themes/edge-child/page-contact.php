@@ -30,8 +30,8 @@ get_header(); ?>
 							<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/bpdCursive.png" />
 					</div>
 					<div class="contact-intro-info">
-						<p>Here is some text letting them know if they want to contact you, you'd be delighted. Do they have questions? You'd love to answer them. It's all good in the hood. Mi Casa es Su Casa. We'll bring the cookies. Etc.
-						</p>
+						<p>If you want to contact us, we'd be delighted. Do you have any questions? We'd love to answer them.</p>
+            <p>Mi Casa es Su Casa. We'll bring the snickerdoodles.</p>
 					</div>
 				</div>
 			</div><!--.contact-intro-wrap -->

@@ -46,49 +46,49 @@ get_header(); ?>
 					<div class="intros">
 						<p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
 						<h3>Warm</h3>
-						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+						<p class="info-text">Devoted to keeping hearts & hearths Warm all over our whole community.</p>
 					</div>
 					<div class="intros">
 						<p><i class="fa fa-hand-peace-o" aria-hidden="true"></i></p>
 						<h3>Cool</h3>
-						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie. Muffin sweet tart apple pie. Muffin sweet tart apple pie.</p>
+						<p class="info-text">Celebrating Cool fun times with dynamic neighborhoods, local music, and amazing restaurants.</p>
 					</div>
 					<div class="intros">
 						<p><i class="fa fa-coffee" aria-hidden="true"></i></p>
 						<h3>Calm</h3>
-						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+						<p class="info-text">Keeping Calm and staying aware by embracing tea-time Happy Hour.</p>
 					</div>
 					<div class="intros">
 						<p><i class="fa fa fa-plug" aria-hidden="true"></i></p>
 						<h3>Connected</h3>
-						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+						<p class="info-text">Knowing we're all Connected and welcoming our diversity, grateful to give back any way we can.</p>
 					</div>
 				</div>
 				<div class="one-column clearfix us us-second">
 					<div class="intros">
 						<p><i class="fa fa-paperclip" aria-hidden="true"></i></p>
 						<h3>Smart</h3>
-						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+						<p class="info-text">Intelligent and focused on a distinctive client experience where straight forward details meet Smart choices.</p>
 					</div>
 					<div class="intros">
 						<p><i class="fa fa-diamond" aria-hidden="true"></i></p>
 						<h3>Buy</h3>
-						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie. Muffin sweet tart apple pie. Muffin sweet tart apple pie.</p>
+						<p class="info-text">When you're looking to Buy, we have a gift for helping you find a sweet gem where you will sparkle!</p>
 					</div>
 					<div class="intros">
 						<p><i class="fa fa-fort-awesome" aria-hidden="true"></i></p>
 						<h3>Sell</h3>
-						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+						<p class="info-text">Ready and set, enjoyable house Selling is our specialty...start packing.</p>
 					</div>
 					<div class="intros">
 						<p><i class="fa fa-smile-o" aria-hidden="true"></i></p>
 						<h3>Happy</h3>
-						<p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+						<p class="info-text">From first meeting to closing and beyond, we'll bring our Happy positive best to your home needs and process.</p>
 					</div>
 				</div> <!--.one-column-->
 				<div class="pdf-buttons clearfix">
-					<button class="btn-default us-btn-left">Download our Buyers Guide</button>
-					<button class="btn-default us-btn-right">Download our Sellers Guide</button>
+					<button class="btn-default us-btn-left"><a href="http://localhost:8888/barbplusdave/wp-content/uploads/2017/02/BarbPlusDaveBuyersGuide.pdf">View our Buyers Guide</a></button>
+					<button class="btn-default us-btn-right"><a href="http://localhost:8888/barbplusdave/wp-content/uploads/2017/02/BarbPlusDaveSellersGuide.pdf">View our Sellers Guide</a></button>
 				</div>
 			</div> <!--.colored-background-->
 	  </section>
@@ -97,6 +97,8 @@ get_header(); ?>
 			<div class="one-column clearfix word-street">
 				<div class="ws-wrap">
 					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/wordOnTheStreet.png" />
+          <?php echo do_shortcode( '[testimonial_rotator id="182"]' ); ?>
+
 				</div>
 			</div> <!--.one-column -->
 		 </div> <!--.container -->

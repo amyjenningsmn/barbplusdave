@@ -64,13 +64,15 @@ endif;
 				<div class="newsletter-wrap">
 					<div class="newsletter-info">
 						<p>Want to subscribe to our newsletter?</p>
-						<!-- <?php echo do_shortcode( '[mc4wp_form id="172"]' ); ?>  shortcode for local, other for staging-->
+						<!-- shortcode for local below -->
+						<!-- <?php echo do_shortcode( '[mc4wp_form id="172"]' ); ?> -->
+						<!-- shortcode for staging below -->
 						<?php echo do_shortcode( '[mc4wp_form id="163"]' ); ?>
 					</div>
 				</div>
 			</div><!-- end .three-column -->
 			<div class="one-column clearfix">
-				<p class="copy">&copy; 2017 Barb Plus Dave</p>
+				<p class="copy">&copy; 2017 Barb Plus Dave<span class="grey">  ::: </span>B+D Cover Photo <a href="http://www.abernathyphoto.com/" target="_blank">&copy; Abernathy Photo</a></p>
 			</div>
 		<div style="clear:both;"></div>
 		</div> <!-- end .container -->
