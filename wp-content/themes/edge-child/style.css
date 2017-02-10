@@ -530,6 +530,11 @@ div.blog-main-info {
 	padding: 0 15%;
 }
 
+.photoCred {
+	line-height: .5px;
+	font-size: .8em;
+}
+
 /* First Row of Why Us */
 .us-first {
 	padding-bottom: 0;
@@ -572,6 +577,10 @@ div.blog-main-info {
 .testimonial_rotator.template-default .has-image .img img, .testimonial_rotator_single.has-image.template-default .img img {
 	margin-left: 20%;
 	border-radius: 50%;
+}
+
+.fa-chevron-left:before, .fa-chevron-right:before {
+		color: #991D25;
 }
 
 /* #Listings Archive Page =================== */

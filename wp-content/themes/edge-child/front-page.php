@@ -34,22 +34,22 @@
 			 <div class="intros">
 				 <p><i class="fa fa-heart-o" aria-hidden="true"></i></p>
 				 <h3>Warm</h3>
-				 <p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+				 <p class="info-text">Devoted to keeping hearts & hearths Warm all over our whole community.</p>
 			 </div>
 			 <div class="intros">
 				 <p><i class="fa fa-hand-peace-o" aria-hidden="true"></i></p>
 				 <h3>Cool</h3>
-				 <p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie. Muffin sweet tart apple pie. Muffin sweet tart apple pie.</p>
+				 <p class="info-text">Celebrating Cool fun times with dynamic neighborhoods, local music, and amazing restaurants.</p>
 			 </div>
 			 <div class="intros">
 				 <p><i class="fa fa-coffee" aria-hidden="true"></i></p>
 				 <h3>Calm</h3>
-				 <p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+				 <p class="info-text">Keeping Calm and staying aware by embracing tea-time Happy Hour.</p>
 			 </div>
 			 <div class="intros">
 				 <p><i class="fa fa fa-plug" aria-hidden="true"></i></p>
 				 <h3>Connected</h3>
-				 <p class="info-text">Fruitcake chocolate bar chupa chups. Powder cotton candy tiramisu icing donut chupa chups danish cheesecake. Muffin sweet tart apple pie.</p>
+				 <p class="info-text">Knowing we're all Connected and welcoming our diversity, grateful to give back any way we can.</p>
 			 </div>
 			 <button class="btn-default us-btn"><a href="http://localhost:8888/barbplusdave/about/">Get to Know Us!</a></button>
 		 </div><!--.one-column -->
