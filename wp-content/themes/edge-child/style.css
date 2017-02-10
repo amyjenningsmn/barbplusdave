@@ -659,8 +659,20 @@ div.blog-main-info {
 	}
 }
 
-.cat-links a{
+.cat-links, .tag-links{
 	display: none;
+}
+/* comments section in jetpack */
+#jp-carousel-comment-form {
+	display: none;
+}
+
+.jp-carousel-image-meta{
+	display: none;
+}
+
+#jp-carousel-comments-loading {
+	display: none !important;
 }
 
 

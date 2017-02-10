@@ -47,7 +47,7 @@ function create_custom_post_types() {
                 'name' => __( 'Blog' ),
                 'singular_name' => __( 'Blog Post' )
             ),
-						'taxonomies' => array( 'category' ),
+						// 'taxonomies' => array( 'category' ),
             'public' => true,
             'has_archive' => true,
             'rewrite' => array( 'slug' => 'blog' ),
