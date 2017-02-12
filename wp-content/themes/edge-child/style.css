@@ -415,6 +415,14 @@ div.main-heading {
 	line-height: 5px;
 }
 
+
+.dog {
+	position: absolute;
+	width: 20%;
+	top: 50px;
+	left: 360px;
+}
+
 a.more {
 	font-family: 'Lato', sans-serif;
 	font-size: .6em;

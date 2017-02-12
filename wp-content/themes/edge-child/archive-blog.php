@@ -18,8 +18,9 @@ get_header(); ?>
  <div class="one-column clearfix">
 	<main id="blog">
 	 <div class="main-heading">
-			 <h1>What Are We Up to Now?</h1>
-	 </div>
+    <img class="dog" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/truckDog.png" />
+    <h1>What Are We Up to Now?</h1>
+    </div>
 					<?php
 					if( have_posts() ) {
 						while( have_posts() ) {
