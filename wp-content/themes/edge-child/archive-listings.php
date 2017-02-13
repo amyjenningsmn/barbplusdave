@@ -52,7 +52,7 @@ get_header(); ?>
 							 <li>Price: $<?php echo $price; ?></li>
 							 <li>Bedrooms: <?php echo $bedrooms; ?></li>
 							 <li>Bathrooms: <?php echo $bathrooms; ?></li>
-							 <li>MLS #: <?php echo $mls_number; ?></li>
+							 <li><?php if ($mls_number): ?>MLS #: <?php echo $mls_number; ?><?php endif; ?></li>
 						 </ul>
 						</div><!--.listing-details -->
 						<?php get_template_part( 'content', get_post_format() );

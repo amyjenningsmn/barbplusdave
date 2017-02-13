@@ -15,12 +15,20 @@
 ==================================================
 # Color Palette
 # General Styles
-# Header Override Styles
-# Footer Override Styles
-# Main Slider Override Styles
+# Header
+# Footer
 # Home Page Styles
+	## Main Slider
 	## Get to Know Us Section
 	## Our Listings & Blog Sections
+	## Instagram Section
+# About Page
+# Listings - Archive Page
+# Single Listings
+# Blog - Archive Page
+# Single Blog Posts
+# Contact Page
+
 */
 
 /*  # Color Palette
@@ -43,10 +51,6 @@
 
 */
 
-/*body {
-	background: pink;
-}*/
-
 /* ----- #Headings  ----- */
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
@@ -64,27 +68,13 @@ h1, h2, h3 {
 	background-color: #F7EBD7;
 }
 
-/*.one-column {
-	background-color: cyan;
-}*/
-
 .two-column, .two-column-full-width {
     width: 65%;
-		/*background-color: tomato;*/
 		padding: 0 15px 15px;
 }
 
-/*.three-column {
-	background-color: pink;
-	padding: 15px;
-}*/
 
-.four-column {
-	/*background-color: yellow;*/
-}
-
-
-/*  # Header Override Styles
+/*  # Header
 ================================================== */
 
 #masthead {
@@ -132,20 +122,13 @@ h1, h2, h3 {
 	margin-left: 15px;
 }
 
-/*.realtor {
-	color: #991D25;
-	font-size: 1.1em;
-}*/
-
-/*  # Footer Override Styles
+/*  # Footer
 ================================================== */
 
 
 .site-info {
 	background-color: #C6C6C6;
-	/*border-top: 5px solid rgba(162, 162, 162, 0.75);*/
 }
-
 
 .contact, .newsletter {
 	background-image: url("../edge-child/assets/images/rectangle2copy.png");
@@ -249,8 +232,6 @@ h1, h2, h3 {
 .bullhorn-wrap {
 	position: relative;
 	height: 100px;
-	/*background-color: #fff;
-	border-radius: 6px;*/
 }
 
 .bullhorn {
@@ -301,7 +282,11 @@ h1, h2, h3 {
 
 /* need media queries */
 
-/*  # Main Slider Override Styles
+
+/*  # Home Page Styles
+================================================== */
+
+/*  ## Main Slider (Hero Image Homepage)
 ================================================== */
 
 
@@ -327,10 +312,7 @@ a.slider-prev, a.slider-next {
 	display: none;
 }
 
-/*  # Home Page Styles
-================================================== */
-
-/* ## Welcome Section =================== */
+/* ## Welcome Section ======================== */
 .welcome {
 	padding: 5% 0 8%;
 }
@@ -352,7 +334,6 @@ a.slider-prev, a.slider-next {
 	text-align: center;
 	font-size: 1.2em;
 }
-
 
 /* ## Get to Know Us Section =================== */
 
@@ -407,20 +388,11 @@ a.slider-prev, a.slider-next {
 
 div.main-heading {
 	margin: 120px 0 70px;
-	/*margin: 25% 0 15%;*/
 	border-bottom: 1px solid #C69F70;
 }
 
 .main-heading h2, .main-info h3 {
 	line-height: 5px;
-}
-
-
-.dog {
-	position: absolute;
-	width: 20%;
-	top: 50px;
-	left: 360px;
 }
 
 a.more {
@@ -607,6 +579,13 @@ div.blog-main-info {
 
 /* #Blog Archive Page =================== */
 
+.dog {
+	position: absolute;
+	width: 20%;
+	top: 50px;
+	left: 360px;
+}
+
 #blog article {
 	position: relative;
 }
@@ -670,6 +649,7 @@ div.blog-main-info {
 .cat-links, .tag-links{
 	display: none;
 }
+
 /* comments section in jetpack */
 #jp-carousel-comment-form {
 	display: none;
@@ -683,33 +663,11 @@ div.blog-main-info {
 	display: none !important;
 }
 
-
-
-/* #Contact Page =================== */
-
-.bpd-form {
-	padding: 0 20%;
-}
-
-.contact-intro-info {
-	padding: 0 20%;
-}
-
-.contact-intro-info p {
-	text-align: center;
-	line-height: 1.1em;
-
-}
-
-/* #Single Blog Page =================== */
-
-.gallery {
-	clear: both;
-	float: left;
-	margin-top: 5%;
-}
-
 /* #Single Listing Page =================== */
+
+#single-listings .main-heading {
+	margin-bottom: 20px;
+}
 
 .single-listing-img {
 	display: block;
@@ -728,4 +686,33 @@ padding-left: 58%;
 
 .main-heading.sub {
 	margin: 5% 0 0;
+}
+
+.jp-carousel-titleanddesc-title {
+	display: none;
+}
+
+/* #Single Blog Page =================== */
+
+.gallery {
+	clear: both;
+	float: left;
+	margin-top: 5%;
+}
+
+
+/* #Contact Page =================== */
+
+.bpd-form {
+	padding: 0 20%;
+}
+
+.contact-intro-info {
+	padding: 0 20%;
+}
+
+.contact-intro-info p {
+	text-align: center;
+	line-height: 1.1em;
+
 }
