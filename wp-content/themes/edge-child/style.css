@@ -125,7 +125,6 @@ h1, h2, h3 {
 /*  # Footer
 ================================================== */
 
-
 .site-info {
 	background-color: #C6C6C6;
 }
@@ -224,6 +223,20 @@ h1, h2, h3 {
 	letter-spacing: 2px;
 }
 
+.letter-space a,
+.phone-number a,
+.copy a {
+	color: #991D25;
+}
+
+.letter-space a:hover, .letter-space a:focus,
+.phone-number a:hover,
+.phone-number a:focus,
+.copy a:hover,
+.copy a:focus {
+	color: #C69f70;
+}
+
 
 .site-info .social-links {
 	padding: 3% 0 0 28%;
@@ -268,14 +281,6 @@ h1, h2, h3 {
 	color: #991D25;
 }
 
-.copy a {
-	color: #991D25;
-}
-
-.copy a:hover, a:focus {
-	color: #fff;
-}
-
 .grey {
 	color: #454951;
 }
@@ -313,6 +318,22 @@ a.slider-prev, a.slider-next {
 }
 
 /* ## Welcome Section ======================== */
+.hero-cred-wrap {
+	position: relative;
+	width: 100%;
+}
+
+.hero-cred {
+	position: absolute;
+	top: 0;
+	right: 5px;
+}
+
+.hero-cred p {
+	font-size: .7em;
+	letter-spacing: 1px;
+}
+
 .welcome {
 	padding: 5% 0 8%;
 }
@@ -510,9 +531,14 @@ div.blog-main-info {
 	padding: 0 15%;
 }
 
-.photoCred {
+.pre-pc {
+	padding-bottom: 4px;
+}
+
+.photo-cred {
 	line-height: .5px;
-	font-size: .8em;
+	font-size: .7em;
+	letter-spacing: 1px;
 }
 
 /* First Row of Why Us */

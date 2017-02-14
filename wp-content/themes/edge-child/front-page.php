@@ -8,6 +8,11 @@
  */
 
  get_header(); ?>
+ <div class="hero-cred-wrap">
+   <div class="hero-cred">
+     <p>Photo &copy; John Abernathy</p>
+   </div>
+ </div>
  <div class="container clearfix">
 		<section id="welcome">
 			<div class="one-column clearfix welcome">

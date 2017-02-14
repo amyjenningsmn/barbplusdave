@@ -33,8 +33,8 @@ endif;
 						<h4>Realtor</h4>
 						<p>4316 Upton Ave S, Suite 300</p>
 						<p>Minneapolis, MN 55410</p></br>
-						<p class="letter-space"> barbpalmerrealtor@gmail.com</p>
-						<p class="letter-space">LakesAreaRealty.com</p>
+						<p class="letter-space"><a href="mailto:barbpalmerrealtor@gmail.com" target="_top">barbpalmerrealtor@gmail.com</a></p>
+						<p class="letter-space"><a href="http://lakesarearealty.com" target="_blank">LakesAreaRealty.com</a></p>
 						<img class="mls" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mls.png" />
 						<img class="equal" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/equalHousing.png" />
 					</div><!-- .contact-info -->
@@ -72,7 +72,7 @@ endif;
 				</div>
 			</div><!-- end .three-column -->
 			<div class="one-column clearfix">
-				<p class="copy">&copy; 2017 Barb Plus Dave<span class="grey">  ::: </span>B+D Cover Photo <a href="http://www.abernathyphoto.com/" target="_blank">&copy; Abernathy Photo</a></p>
+				<p class="copy">&copy; 2017 Barb Plus Dave<span class="grey">  ::: </span>Illustrations by <a href="http://cargocollective.com/Lucymichellillustration" target="_blank">Lucy Michell</a><span class="grey">  ::: </span>Site by <a href="http://amyjenningsdev.com" target="_blank">Amy Jennings</a></p>
 			</div>
 		<div style="clear:both;"></div>
 		</div> <!-- end .container -->

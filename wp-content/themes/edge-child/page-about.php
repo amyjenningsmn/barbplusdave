@@ -28,8 +28,8 @@ get_header(); ?>
 				</div>
 				<div class="frame-wrap">
 					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/davePicCircle.png" />
-					<h3>Dave Palmer</h3>
-          <h4 class="photoCred">Photo: Josh Kohanek</h4>
+					<h3 class="pre-pc">Dave Palmer</h3>
+          <h4 class="photo-cred">Photo: Josh Kohanek</h4>
 					<p class="info-text">Dave is Assistant to Barb, dedicated to providing honest, detailed service to all clients, making sure facts are communicated clearly, respecting both sides of any transaction.</p>
           <p class="info-text">Dave comes to real estate after working for 36 years as a Camp Director, and as a leader in non-profit operations. Along the way he’s acquired a wealth of knowledge in negotiating, and his experience in construction has been critical for making decisions in multi-million dollar projects. Dave is perhaps most valued as a colleague, mentor and friend.</p>
           <p class="info-text">Locally grown, Dave enjoys all the area has to offer. Not surprisingly, Dave loves camping and often disappears deep into the woods…but not until after the closing!</p>
