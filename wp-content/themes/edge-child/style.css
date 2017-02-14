@@ -564,6 +564,24 @@ div.blog-main-info {
 }
 
 /* #Listings Archive Page =================== */
+.second-nav {
+	background-color: #454951;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	padding: 2px 0;
+}
+
+.second-nav a {
+	color: #F7EBD7;
+}
+
+.second-nav a:hover, .second-nav a:focus {
+	color: #C69f70;
+}
+
 
 .listing-details {
 	padding: 9% 0 2%;
@@ -675,7 +693,14 @@ div.blog-main-info {
 }
 
 .right {
-padding-left: 68%;
+padding-left: 58%;
+}
+
+.open-house-banner {
+	text-transform: none;
+	font-weight: normal;
+	color: #fff;
+	padding-bottom: 2px;
 }
 
 #single-listings .gallery {

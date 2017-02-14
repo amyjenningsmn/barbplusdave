@@ -9,37 +9,45 @@
  */
 
  get_header(); ?>
+ <?php while ( have_posts() ) : the_post();
+
+ $main_listing_image = get_field('main_listing_image');
+ $price = get_field('price');
+ $open_house = get_field('open_house');
+ $more = get_field('more_info_to_come');
+ $gallery = get_field('gallery');
+ $living_area = get_field('living_area');
+ $lot_size = get_field('lot_size');
+ $year_built = get_field('year_built');
+ $stories = get_field('stories');
+ $bedrooms = get_field('bedrooms');
+ $bathrooms = get_field('bathrooms');
+ $taxes = get_field('taxes');
+ $mls_number = get_field('mls_number');
+ $garage = get_field('garage');
+ $virtual_tour_link = get_field('virtual_tour_link');
+ $three_d_model_link = get_field('three_d_model_link');
+ $embed_link = get_field('embed_link');
+ // $status = get_field('status');
+ $field = get_field_object('status');
+ $value = $field['value'];
+ $label = $field['choices'][ $value ];
+?>
+
+ <?php if ($open_house): ?>
+   <div class="second-nav clearfix">
+     <h3 class="open-house-banner"><?php echo $open_house; ?></h3>
+   </div>
+   <?php endif; ?>
   <div class="container clearfix">
  		<div class="one-column clearfix">
-      <section id="single-listings">
-
-        <?php while ( have_posts() ) : the_post();
-
-        $main_listing_image = get_field('main_listing_image');
-        $price = get_field('price');
-        $open_house = get_field('open_house');
-        $more = get_field('more_info_to_come');
-        $gallery = get_field('gallery');
-        $living_area = get_field('living_area');
-        $lot_size = get_field('lot_size');
-        $year_built = get_field('year_built');
-        $stories = get_field('stories');
-        $bedrooms = get_field('bedrooms');
-        $bathrooms = get_field('bathrooms');
-        $taxes = get_field('taxes');
-        $mls_number = get_field('mls_number');
-        $garage = get_field('garage');
-        $virtual_tour_link = get_field('virtual_tour_link');
-        $three_d_model_link = get_field('three_d_model_link');
-        $embed_link = get_field('embed_link');
-        // $status = get_field('status');
-        $field = get_field_object('status');
-        $value = $field['value'];
-        $label = $field['choices'][ $value ];
-     ?>
-     <div class="main-heading">
+     <section id="single-listings">
+      <div class="main-heading">
        <h1><?php echo the_title(); ?></h1>
-        <h2>$<?php echo $price ?><span class=" right status-<?php echo $value; ?>">Status: <?php echo $label; ?></span></h2>
+       <?php if ($price) { ?>
+         <h2>$<?php echo $price; ?>
+         <?php } else { ?>
+         <h2>Just Announced!<?php } ?><span class="right">Status: <?php echo $label; ?></span></h2>
      </div>
      <div class="listing-images">
           <?php echo $gallery; ?>

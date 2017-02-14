@@ -10,10 +10,13 @@
  */
 
 get_header(); ?>
+		<div class="second-nav clearfix">
+			<a href="http://www.lakesarearealty.com/" target="_blank">MLS Property Search</a>
+		</div>
 		<div class="container clearfix">
 		 <div class="one-column clearfix">
 			<main id="listings">
- 			 <div class="main-heading">
+			<div class="main-heading">
  					 <h1>Our Listings</h1>
  			 </div>
 				 <?php
