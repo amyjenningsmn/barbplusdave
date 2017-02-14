@@ -17,6 +17,7 @@
 
         $main_listing_image = get_field('main_listing_image');
         $price = get_field('price');
+        $open_house = get_field('open_house');
         $more = get_field('more_info_to_come');
         $gallery = get_field('gallery');
         $living_area = get_field('living_area');
@@ -28,6 +29,9 @@
         $taxes = get_field('taxes');
         $mls_number = get_field('mls_number');
         $garage = get_field('garage');
+        $virtual_tour_link = get_field('virtual_tour_link');
+        $three_d_model_link = get_field('three_d_model_link');
+        $embed_link = get_field('embed_link');
         // $status = get_field('status');
         $field = get_field_object('status');
         $value = $field['value'];
@@ -39,6 +43,16 @@
      </div>
      <div class="listing-images">
           <?php echo $gallery; ?>
+          <?php if ($embed_link): ?>
+            <span class="virtual-listing"><?php echo $embed_link; ?></span><?php endif; ?>
+          <div class="listing-buttons">
+            <?php if ($virtual_tour_link): ?>
+              <button class="btn-default btn-listing"><a href="<?php echo $virtual_tour_link; ?>" target="_blank">Click to see the Virtual Tour</a></button>
+              <?php endif; ?>
+            <?php if ($three_d_model_link): ?>
+              <button class="btn-default btn-listing"><a href="<?php echo $three_d_model_link; ?>" target="_blank">Click to see the 3d Model</a></button>
+            <?php endif; ?>
+          </div>
           <?php the_content(); ?>
      </div>
      <div class="main-heading sub">

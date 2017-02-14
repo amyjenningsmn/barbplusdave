@@ -675,13 +675,13 @@ div.blog-main-info {
 }
 
 .right {
-padding-left: 58%;
+padding-left: 68%;
 }
 
 #single-listings .gallery {
 	clear: both;
 	float: none;
-	margin: 3% 3% 0;
+	margin-bottom: 3%;
 }
 
 .main-heading.sub {
@@ -691,6 +691,27 @@ padding-left: 58%;
 .jp-carousel-titleanddesc-title {
 	display: none;
 }
+
+.virtual-listing iframe {
+	margin-bottom: 3%;
+}
+
+/*.listing-buttons {
+	text-align: center;
+}*/
+
+.btn-listing {
+	background-color: #991D25;
+	margin: 0 3% 3% 0;
+}
+
+.btn-listing a {
+	color: #fff;
+}
+
+
+
+
 
 /* #Single Blog Page =================== */
 
