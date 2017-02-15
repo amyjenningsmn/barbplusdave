@@ -64,7 +64,7 @@ endif;
 			<div class="three-column newsletter">
 				<div class="newsletter-wrap">
 					<div class="newsletter-info">
-						<p>Want to subscribe to our newsletter?</p>
+						<p class="big-p">Want to subscribe to our newsletter?</p>
 						<!-- shortcode for local below -->
 						<?php echo do_shortcode( '[mc4wp_form id="172"]' ); ?>
 						<!-- shortcode for staging below -->

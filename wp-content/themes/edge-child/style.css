@@ -73,7 +73,6 @@ h1, h2, h3 {
 		padding: 0 15px 15px;
 }
 
-
 /*  # Header
 ================================================== */
 
@@ -265,6 +264,7 @@ h1, h2, h3 {
 	font-size: .8em;
 	letter-spacing: 1.5px;
 	color: #991D25;
+	margin-top: 45px;
 }
 
 .grey {
@@ -280,8 +280,8 @@ h1, h2, h3 {
 }
 
 .mc4wp-alert p {
-	color: #fff;
-	padding-top: 15px;
+	color: #991D25;
+	padding-top: 25px;
 	line-height: 25px;
 }
 
@@ -321,8 +321,24 @@ h1, h2, h3 {
 		top: 29px;
 		left: 0px;
 	}
+	/* newsletter section */
+	.newsletter-info {
+		top: 36px;
+		left: 0px;
+		width: 280px;
+		line-height: 1.1px;
+	}
+	.newsletter-info p {
+		font-size: .8em;
+	}
+	.newsletter-info .big-p {
+		font-size: 1em;
+	}
+
+
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+	/* contact section */
 	.contact-info {
 		top: 21px;
 		left: 25px;
@@ -332,8 +348,20 @@ h1, h2, h3 {
 		top: 37px;
 		left: 17px;
 	}
+	/* newsletter section */
+	.newsletter {
+			margin-left: 176px;
+		}
+	.newsletter-info {
+		top: 42px;
+		left: 20px;
+	}
 }
 @media only screen and (max-width: 767px) {
+	.contact, .phone, .newsletter {
+		margin-left: 21px;
+	}
+	/* contact section */
 	 .contact-info {
 		top: 26px;
 		left: 42px;
@@ -345,8 +373,19 @@ h1, h2, h3 {
 		top: 53px;
 		left: 42px;
 	}
+	/* newsletter section */
+	.newsletter-info {
+		top: 63px;
+		left: 67px;
+		line-height: 5px;
+	}
 }
 @media only screen and (max-width: 480px) {
+	.contact, .phone, .newsletter {
+		margin-left: 0px;
+		height: 185px;
+	}
+	/* contact section */
 		.contact-info {
 			top: 2px;
 			left: 20px;
@@ -362,7 +401,20 @@ h1, h2, h3 {
 			top: 23px;
 			left: -15px;
 		}
+		/* newsletter section */
+		.newsletter-info {
+			top: 29px;
+			left: 16px;
+			line-height: 1px;
+			width: 265px;
+		}
+		.mc4wp-alert p {
+			padding-top: 0px;
+		}
 	}
+
+
+
 
 
 
