@@ -33,10 +33,11 @@ endif;
 						<h4>Realtor</h4>
 						<p>4316 Upton Ave S, Suite 300</p>
 						<p>Minneapolis, MN 55410</p></br>
-						<p class="letter-space"><a href="mailto:barbpalmerrealtor@gmail.com" target="_top">barbpalmerrealtor@gmail.com</a></p>
-						<p class="letter-space"><a href="http://lakesarearealty.com" target="_blank">LakesAreaRealty.com</a></p>
 						<img class="mls" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mls.png" />
 						<img class="equal" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/equalHousing.png" />
+						<p class="letter-space links-move"><a href="mailto:barbpalmerrealtor@gmail.com" target="_top">barbpalmerrealtor@gmail.com</a></p>
+						<p class="letter-space"><a href="http://lakesarearealty.com" target="_blank">LakesAreaRealty.com</a></p>
+
 					</div><!-- .contact-info -->
 				</div><!-- .contact-wrap -->
 			</div><!-- end .three-column contact-->
@@ -67,7 +68,6 @@ endif;
 						<!-- shortcode for local below -->
 						<?php echo do_shortcode( '[mc4wp_form id="172"]' ); ?>
 						<!-- shortcode for staging below -->
-						<!-- <?php echo do_shortcode( '[mc4wp_form id="163"]' ); ?> -->
 					</div>
 				</div>
 			</div><!-- end .three-column -->

@@ -175,20 +175,6 @@ h1, h2, h3 {
 	text-align: center;
 }
 
-.mc4wp-form-fields p input {
-	margin: 10px auto 0;
-}
-
-.mc4wp-form-fields p label {
-	margin: 0 auto;
-}
-
-.mc4wp-alert p {
-	color: #fff;
-	padding-top: 15px;
-	line-height: 25px;
-}
-
 .lar {
 	width: 100px;
 	float: left;
@@ -220,7 +206,7 @@ h1, h2, h3 {
 }
 
 .letter-space {
-	letter-spacing: 2px;
+	letter-spacing: 1.5px;
 }
 
 .letter-space a,
@@ -285,7 +271,80 @@ h1, h2, h3 {
 	color: #454951;
 }
 
-/* need media queries */
+.mc4wp-form-fields p input {
+	margin: 10px auto 0;
+}
+
+.mc4wp-form-fields p label {
+	margin: 0 auto;
+}
+
+.mc4wp-alert p {
+	color: #fff;
+	padding-top: 15px;
+	line-height: 25px;
+}
+
+/* Footer Media Queries */
+
+
+@media only screen and (max-width: 1300px) {
+	.contact-info {
+		top: 12px;
+		left: 3px;
+		width: 275px;
+		line-height: 3px;
+	}
+	.lar {
+		padding-top: 10px;
+		width: 83px;
+	}
+	.contact-info h3 {
+		font-size: 1.3em;
+	}
+	.contact-info h4 {
+		font-size: 1.2em;
+		line-height: 2px;
+	}
+	.mls {
+		bottom: 4px;
+		right: 19px;
+		width: 40px;
+	}
+	.equal {
+		bottom: 3px;
+		right: 0px;
+		width: 18px;
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.contact-info {
+		top: 21px;
+		left: 25px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	 .contact-info {
+		top: 26px;
+		left: 42px;
+		width: 350px;
+		line-height: 10px;
+	}
+}
+@media only screen and (max-width: 480px) {
+		.contact-info {
+			top: 2px;
+			left: 20px;
+			width: 258px;
+			line-height: 3px;
+	  }
+		.lar {
+			width: 80px;
+			padding-top: 15px;
+		}
+	}
+
+
 
 
 /*  # Home Page Styles
