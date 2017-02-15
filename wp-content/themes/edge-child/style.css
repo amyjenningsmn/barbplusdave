@@ -287,8 +287,8 @@ h1, h2, h3 {
 
 /* Footer Media Queries */
 
-
 @media only screen and (max-width: 1300px) {
+	/* contact section */
 	.contact-info {
 		top: 12px;
 		left: 3px;
@@ -316,11 +316,21 @@ h1, h2, h3 {
 		right: 0px;
 		width: 18px;
 	}
+	/* phone section */
+	.phone-info {
+		top: 29px;
+		left: 0px;
+	}
 }
 @media only screen and (max-width: 1023px) {
 	.contact-info {
 		top: 21px;
 		left: 25px;
+	}
+	/* phone section */
+	.phone-info {
+		top: 37px;
+		left: 17px;
 	}
 }
 @media only screen and (max-width: 767px) {
@@ -329,6 +339,11 @@ h1, h2, h3 {
 		left: 42px;
 		width: 350px;
 		line-height: 10px;
+	}
+	/* phone section */
+	.phone-info {
+		top: 53px;
+		left: 42px;
 	}
 }
 @media only screen and (max-width: 480px) {
@@ -342,7 +357,13 @@ h1, h2, h3 {
 			width: 80px;
 			padding-top: 15px;
 		}
+		/* phone section */
+		.phone-info {
+			top: 23px;
+			left: -15px;
+		}
 	}
+
 
 
 
