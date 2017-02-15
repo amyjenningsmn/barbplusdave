@@ -334,9 +334,8 @@ h1, h2, h3 {
 	.newsletter-info .big-p {
 		font-size: 1em;
 	}
-
-
 }
+
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
 	/* contact section */
 	.contact-info {
@@ -357,6 +356,7 @@ h1, h2, h3 {
 		left: 20px;
 	}
 }
+
 @media only screen and (max-width: 767px) {
 	.contact, .phone, .newsletter {
 		margin-left: 21px;
@@ -380,6 +380,7 @@ h1, h2, h3 {
 		line-height: 5px;
 	}
 }
+
 @media only screen and (max-width: 480px) {
 	.contact, .phone, .newsletter {
 		margin-left: 0px;
@@ -412,13 +413,6 @@ h1, h2, h3 {
 			padding-top: 0px;
 		}
 	}
-
-
-
-
-
-
-
 
 /*  # Home Page Styles
 ================================================== */
@@ -488,6 +482,15 @@ a.slider-prev, a.slider-next {
 	font-size: 1.2em;
 }
 
+@media only screen and (max-width: 767px) {
+	.bpd-welcome-wrap {
+		float: none;
+		width: 100%;
+	}
+	.welcome-text {
+		padding: 0 0 10%;
+	}
+}
 /* ## Get to Know Us Section =================== */
 
 .us {
@@ -500,6 +503,7 @@ a.slider-prev, a.slider-next {
   margin-left: auto;
   margin-right: auto;
 	padding-bottom: 3%;
+	padding-top: 3%;
 }
 
 .intros {
@@ -509,21 +513,36 @@ a.slider-prev, a.slider-next {
 	padding: 3% 3%;
 }
 
+.intros p {
+	margin: 0;
+}
+
 .intros i  {
 	font-size: 2.5em;
+	padding-top: 20px;
 }
 
-.info-text {
-	text-align: justify;
+p.info-text.last{
+	margin-bottom: 40px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1023px) {
 	.intros {
-		padding: 0;
+		padding: 0 4%;
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.intros {
+		padding: 0 20%;
 		width: 100%;
 	}
 }
-
+@media only screen and (max-width: 480px) {
+		.intros {
+			padding: 0 5%;
+		}
+}
 .us-btn {
 	clear: both;
 	display: block;

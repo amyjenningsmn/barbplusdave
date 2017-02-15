@@ -54,10 +54,10 @@
 			 <div class="intros">
 				 <p><i class="fa fa fa-plug" aria-hidden="true"></i></p>
 				 <h3>Connected</h3>
-				 <p class="info-text">Knowing we're all Connected and welcoming our diversity, grateful to give back any way we can.</p>
+				 <p class="info-text last">Knowing we're all Connected and welcoming our diversity, grateful to give back any way we can.</p>
 			 </div>
-			 <button class="btn-default us-btn"><a href="http://localhost:8888/barbplusdave/about/">Get to Know Us!</a></button>
-		 </div><!--.one-column -->
+      <button class="btn-default us-btn"><a href="http://localhost:8888/barbplusdave/about/">Get to Know Us!</a></button>
+     </div><!--.one-column -->
 	 </div><!--.colored-background -->
  </section>
  <section id="listings-blog-home">
