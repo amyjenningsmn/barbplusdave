@@ -65,9 +65,9 @@ endif;
 					<div class="newsletter-info">
 						<p>Want to subscribe to our newsletter?</p>
 						<!-- shortcode for local below -->
-						<!-- <?php echo do_shortcode( '[mc4wp_form id="172"]' ); ?> -->
+						<?php echo do_shortcode( '[mc4wp_form id="172"]' ); ?>
 						<!-- shortcode for staging below -->
-						<?php echo do_shortcode( '[mc4wp_form id="163"]' ); ?>
+						<!-- <?php echo do_shortcode( '[mc4wp_form id="163"]' ); ?> -->
 					</div>
 				</div>
 			</div><!-- end .three-column -->
