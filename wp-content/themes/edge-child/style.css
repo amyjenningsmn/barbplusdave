@@ -792,18 +792,14 @@ div.blog-main-info p {
 		padding: 5px 2px;
 	}
 }
-/* Word on the Street Rotator */
+/* Word on the Street Testimonial Section */
 .ws-wrap {
 	padding-top: 5%;
 }
-
-.testimonial_rotator.template-default .has-image .img img, .testimonial_rotator_single.has-image.template-default .img img {
-	margin-left: 20%;
-	border-radius: 50%;
-}
-
-.fa-chevron-left:before, .fa-chevron-right:before {
-		color: #991D25;
+@media only screen and (min-width: 768px){
+	.word-street {
+		padding: 0 10% 10%;
+	}
 }
 
 /* #Listings Archive Page =================== */

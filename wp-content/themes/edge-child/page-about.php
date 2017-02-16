@@ -100,12 +100,13 @@ get_header(); ?>
 			</div> <!--.colored-background-->
 	  </section>
 		<section id="word-street">
-		 <div class="container clearfix">
+		 <!-- <div class="container clearfix"> -->
+     <div class="clearfix">
 			<div class="one-column clearfix word-street">
 				<div class="ws-wrap">
 					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/wordOnTheStreet.png" />
           <!-- <?php echo do_shortcode( '[sp_testimonials design="design-3"]' ); ?> -->
-          <?php echo do_shortcode( '[sp_testimonials_slider design="design-3" autoplay="true" autoplay_interval="10000" speed="1000"]' ); ?>
+          <?php echo do_shortcode( '[sp_testimonials_slider design="design-3" autoplay="true" autoplay_interval="11000" speed="1000"]' ); ?>
         </div>
 			</div> <!--.one-column -->
 		 </div> <!--.container -->
