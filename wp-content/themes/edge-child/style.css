@@ -792,6 +792,7 @@ div.blog-main-info p {
 		padding: 5px 2px;
 	}
 }
+
 /* Word on the Street Testimonial Section */
 .ws-wrap {
 	padding-top: 5%;
@@ -821,9 +822,29 @@ div.blog-main-info p {
 	color: #C69f70;
 }
 
+.listing-details-wrap {
+	position: relative;
+	width: 100%;
+}
 
-.listing-details {
-	padding: 9% 0 2%;
+.listings .entry-header h2 {
+	padding-top: 10px;
+}
+
+.listings .entry-title a{
+	color: #991D25;
+}
+
+.listings .entry-title a:hover, a:focus, a:active {
+	color: #C69f70;
+}
+
+.listing-details ul {
+	padding-top: 50px;
+}
+
+#listings .entry-content {
+	display: none;
 }
 
 #listings .entry-meta {

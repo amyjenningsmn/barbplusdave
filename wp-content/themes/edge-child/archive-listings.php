@@ -50,16 +50,18 @@ get_header(); ?>
 							 <?php if ($open_house): ?><span class="not-sold"><?php echo $open_house; ?></span><?php endif; ?>
  							</div>
 						</div><!-- .three-column -->
-						<div class="listing-details">
+						<div class="listing-details-wrap">
+						<div class="listing-details clearfix">
 						 <ul>
 							 <li><?php if ($price): ?>Price: $<?php echo $price; ?><?php endif; ?></li>
 							 <li><?php if ($bedrooms): ?>Bedrooms : <?php echo $bedrooms; ?><?php endif; ?></li>
 							 <li><?php if ($bathrooms): ?>Bathrooms: <?php echo $bathrooms; ?><?php endif; ?></li>
 							 <li><?php if ($mls_number): ?>MLS #: <?php echo $mls_number; ?><?php endif; ?></li>
 						 </ul>
+						 <?php get_template_part( 'content', get_post_format() ); ?>
 						</div><!--.listing-details -->
-						<?php get_template_part( 'content', get_post_format() );
-								}
+						</div>
+								<?php }
 							}
 						else { ?>
 						<h2 class="entry-title"> <?php esc_html_e( 'No Listings Found.', 'edge' ); ?> </h2>
