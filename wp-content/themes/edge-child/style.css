@@ -513,6 +513,10 @@ a.slider-prev, a.slider-next {
 	padding: 3% 3%;
 }
 
+.intros h3 {
+	padding-bottom: 2px;
+}
+
 .intros p {
 	margin: 0;
 }
@@ -522,8 +526,19 @@ a.slider-prev, a.slider-next {
 	padding-top: 20px;
 }
 
-p.info-text.last{
+p.info-text.last {
 	margin-bottom: 40px;
+}
+
+.us-btn {
+	clear: both;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	background-color: #991D25;
+}
+.us-btn a {
+	color: #fff;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -542,16 +557,6 @@ p.info-text.last{
 		.intros {
 			padding: 0 5%;
 		}
-}
-.us-btn {
-	clear: both;
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
-	background-color: #991D25;
-}
-.us-btn a {
-	color: #fff;
 }
 
 /* ## Our Listings & Blog Sections =================== */
@@ -694,6 +699,10 @@ div.blog-main-info p {
 .frame-wrap {
 	width: 50%;
 	float: left;
+	text-align: justify;
+}
+
+.frame-wrap h3, h4{
 	text-align: center;
 }
 
@@ -715,6 +724,23 @@ div.blog-main-info p {
 	letter-spacing: 1px;
 }
 
+@media only screen and (max-width: 1023px){
+	.frame-wrap .info-text {
+		padding: 0 11%;
+	}
+	.frame-wrap img{
+		width: 60%;
+	}
+}
+@media only screen and (max-width: 767px){
+	.frame-wrap {
+		width: 100%;
+		float: none;
+	}
+	.frame-wrap .info-text {
+		padding: 0;
+	}
+}
 /* First Row of Why Us */
 .us-first {
 	padding-bottom: 0;
@@ -749,7 +775,24 @@ div.blog-main-info p {
 	background-color: #991D25;
 	color: #fff;
 }
-
+@media only screen and (max-width: 1023px){
+	.us-btn-left{
+		margin-left: 15%;
+	}
+	.us-btn-right{
+		margin-right: 15%;
+	}
+}
+@media only screen and (max-width: 767px){
+	.btn-default.us-btn-left, .btn-default.us-btn-right {
+		float: none;
+		clear: both;
+		margin: 20px 30%;
+		width: 42%;
+		padding: 5px 2px;
+	}
+}
+/* Word on the Street Rotator */
 .ws-wrap {
 	padding-top: 5%;
 }
