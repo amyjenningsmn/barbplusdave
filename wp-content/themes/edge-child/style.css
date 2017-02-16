@@ -822,6 +822,13 @@ div.blog-main-info p {
 	color: #C69f70;
 }
 
+.picnic {
+	position: absolute;
+	width: 12%;
+	top: 71px;
+	left: 190px;
+}
+
 .listing-details-wrap {
 	position: relative;
 	width: 100%;
@@ -853,6 +860,32 @@ div.blog-main-info p {
 
 #listings .entry-footer {
 	margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 1300px) {
+	.picnic {
+		top: 83px;
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.picnic {
+		width: 14%;
+		top: 91px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.picnic {
+		width: 22%;
+		top: 90px;
+		left: 187px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.picnic {
+		width: 29%;
+		top: 97px;
+		left: 187px;
+	}
 }
 
 /* #Blog Archive Page =================== */
