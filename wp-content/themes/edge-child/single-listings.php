@@ -43,11 +43,17 @@
  		<div class="one-column clearfix">
      <section id="single-listings">
       <div class="main-heading">
-       <h1><?php echo the_title(); ?></h1>
-       <?php if ($price) { ?>
-         <h2>$<?php echo $price; ?>
-         <?php } else { ?>
-         <h2>Just Announced!<?php } ?><span class="right">Status: <?php echo $label; ?></span></h2>
+        <div>
+          <h1><?php echo the_title(); ?></h1>
+          <?php if ($price) { ?>
+            <h2>$<?php echo $price; ?></h2>
+            <?php } else { ?>
+            <h2>Just Announced!<?php } ?></h2>
+        </div>
+        <div>
+          <h2>Status: <?php echo $label; ?></h2>
+        </div>
+
      </div>
      <div class="listing-images">
           <?php echo $gallery; ?>
@@ -69,21 +75,21 @@
 	       <?php endif; ?></h2>
      </div>
       <div class="listing-single-info">
-       <div class="three-column">
+       <div class="listing-fields">
          <ul>
            <li><?php if ($stories): ?>Stories:  <?php echo $stories; ?><?php endif; ?></li>
            <li><?php if ($bedrooms): ?>Bedrooms:  <?php echo $bedrooms; ?><?php endif; ?></li>
            <li><?php if ($bathrooms): ?>Bathrooms:  <?php echo $bathrooms; ?><?php endif; ?></li>
          </ul>
        </div>
-       <div class="three-column">
+       <div class="listing-fields">
          <ul>
            <li><?php if ($living_area): ?>Living Area:  <?php echo $living_area; ?> Square Feet<?php endif; ?></li>
            <li><?php if ($lot_size): ?>Lot Size:  <?php echo $lot_size; ?><?php endif; ?></li>
            <li><?php if ($year_built): ?>Year Built:  <?php echo $year_built; ?><?php endif; ?></li>
          </ul>
        </div>
-       <div class="three-column">
+       <div class="listing-fields">
          <ul>
            <li><?php if ($garage): ?>Garage:  <?php echo $garage; ?><?php endif; ?></li>
            <li><?php if ($mls_number): ?>MLS #:  <?php echo $mls_number; ?><?php endif; ?></li>

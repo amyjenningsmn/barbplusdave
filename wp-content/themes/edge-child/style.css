@@ -564,7 +564,7 @@ p.info-text.last {
 /* .main-heading and .main-info are for both Listings and Blog sections*/
 
 div.main-heading {
-	margin: 120px 0 70px;
+	margin: 70px 0;
 	border-bottom: 1px solid #C69F70;
 }
 
@@ -825,7 +825,7 @@ div.blog-main-info p {
 .picnic {
 	position: absolute;
 	width: 12%;
-	top: 71px;
+	top: 22px;
 	left: 190px;
 }
 
@@ -864,26 +864,26 @@ div.blog-main-info p {
 
 @media only screen and (max-width: 1300px) {
 	.picnic {
-		top: 83px;
+		top: 33px;
 	}
 }
 @media only screen and (max-width: 1023px) {
 	.picnic {
 		width: 14%;
-		top: 91px;
+		top: 42px;
 	}
 }
 @media only screen and (max-width: 767px) {
 	.picnic {
 		width: 22%;
-		top: 90px;
+		top: 39px;
 		left: 187px;
 	}
 }
 @media only screen and (max-width: 480px) {
 	.picnic {
 		width: 29%;
-		top: 97px;
+		top: 47px;
 		left: 187px;
 	}
 }
@@ -1014,10 +1014,6 @@ padding-left: 58%;
 	margin-bottom: 3%;
 }
 
-/*.listing-buttons {
-	text-align: center;
-}*/
-
 .btn-listing {
 	background-color: #991D25;
 	margin: 0 3% 3% 0;
@@ -1027,9 +1023,24 @@ padding-left: 58%;
 	color: #fff;
 }
 
+div.listing-single-info {
+	width: 100%;
+	text-align: left;
+	background-color: #F7EBD7;
+	border-radius: 6px;
+}
 
+div.listing-single-info > div {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 2% 5% 2% 0;
+    padding: 20px;
+}
 
-
+#single-listings .main-heading > div {
+	display: inline-block;
+}
 
 /* #Single Blog Page =================== */
 
