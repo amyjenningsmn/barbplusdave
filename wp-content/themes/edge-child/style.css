@@ -893,68 +893,17 @@ div.blog-main-info p {
 .dog {
 	position: absolute;
 	width: 20%;
-	top: 50px;
+	top: 0px;
 	left: 360px;
 }
 
 #blog article {
 	position: relative;
+	margin-bottom: 5%;
 }
 
 #blog .entry-title {
-	position: absolute;
-	bottom: 60%;
-	left: 35%;
-}
-
-#blog .posted-on {
-	position: absolute;
-	bottom: 58%;
-	left: 35%;
-}
-
-#blog .entry-content {
-	position: absolute;
-	bottom: 10%;
-	left: 35%;
-	padding-right: 20%;
-}
-
-@media only screen and (max-width: 1300px) {
-	 #blog .entry-title,
-	 #blog .posted-on,
-	 #blog .entry-content {
-		position: relative;
-		bottom: inherit;
-		left: 4%;
-	}
-}
-
-@media only screen and (max-width: 1300px) {
-	 #blog .posted-on {
-		left: 6%;
-	}
-}
-
-@media only screen and (max-width: 1023px) {
-	#blog .entry-title,
-	#blog .posted-on,
-	#blog .entry-content {
-	 left: inherit;
-	 padding-right: 0;
- }
-}
-
-@media only screen and (max-width: 1300px), (min-width: 768px) {
-	#blog .blog-image-wrap {
-		padding-top: 20%;
-	}
-}
-
-@media only screen and (max-width: 1300px), (min-width: 768px) {
-	#blog article {
-		padding-top: 10%;
-	}
+	padding-top: 10%;
 }
 
 .cat-links, .tag-links{
@@ -972,6 +921,36 @@ div.blog-main-info p {
 
 #jp-carousel-comments-loading {
 	display: none !important;
+}
+
+@media only screen and (max-width: 1300px) {
+	.dog {
+		top: 18px;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.dog {
+		width: 25%;
+		top: 18px;
+		left: 372px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.dog {
+		width: 30%;
+		top: 45px;
+		left: 372px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.dog {
+		width: 36%;
+		top: 94px;
+		left: 140px;
+	}
 }
 
 /* #Single Listing Page =================== */
