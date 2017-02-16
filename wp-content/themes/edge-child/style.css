@@ -564,7 +564,8 @@ div.main-heading {
 }
 
 .main-heading h2, .main-info h3 {
-	line-height: 5px;
+	/*line-height: 5px;*/
+	padding-bottom: 0;
 }
 
 a.more {
@@ -647,6 +648,28 @@ div.blog-main-info img {
 
 div.blog-main-info {
 	padding-bottom: 50px;
+}
+
+div.blog-main-info p {
+	padding: 0 10%;
+}
+
+@media only screen and (max-width: 1023px) {
+	div.blog-main-info p {
+		padding: 0;
+	}
+	div.blog-main-info:last-of-type {
+		padding-bottom: 0;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	div.home-blog {
+		padding-left: 0;
+	}
+	div.main-heading.what-up {
+		margin: 0px 0 70px;
+	}
 }
 
 /* ## Instagram Section =================== */

@@ -57,6 +57,13 @@ function create_custom_post_types() {
 add_action( 'init', 'create_custom_post_types' );
 
 
+/********************* Filter Excerpt Length to 20 Words ***********************************/
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+
 // Need to add .social-link override functions here (from edge-functions.php and social-icons.php.  Good article for how to do that: https://code.tutsplus.com/tutorials/a-guide-to-overriding-parent-theme-functions-in-your-child-theme--cms-22623)
 
 

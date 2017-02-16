@@ -108,7 +108,7 @@
 						 </section><!--.listings-home -->
 						 <section class="blog-home">
 							 <div class="two-column home-blog entry-content clearfix">
-								 <div class="main-heading">
+								 <div class="main-heading what-up">
 									 <h2>What are we up to now?<a class="more" href="http://localhost:8888/barbplusdave/blog/">more <span>&rsaquo;</span></a></h2>
 								 </div>
 								 <?php query_posts('posts_per_page=2&post_type=blog'); ?>
