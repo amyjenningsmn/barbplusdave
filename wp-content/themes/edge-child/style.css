@@ -902,6 +902,10 @@ div.blog-main-info p {
 	margin-bottom: 5%;
 }
 
+#blog article p {
+	margin: 0 21%;
+}
+
 #blog .entry-title {
 	padding-top: 10%;
 }
@@ -934,6 +938,9 @@ div.blog-main-info p {
 		width: 25%;
 		top: 18px;
 		left: 372px;
+	}
+	#blog article p {
+		margin: 0;
 	}
 }
 
@@ -1023,10 +1030,20 @@ div.listing-single-info > div {
 
 /* #Single Blog Page =================== */
 
+#single-blog article {
+	margin: 0 10%;
+}
+
 .gallery {
 	clear: both;
 	float: left;
 	margin-top: 5%;
+}
+
+@media only screen and (max-width: 767px) {
+	#single-blog article {
+		margin: 0;
+	}
 }
 
 

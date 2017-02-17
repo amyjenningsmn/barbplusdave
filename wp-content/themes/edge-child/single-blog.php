@@ -22,14 +22,16 @@
  	if( 'default' == $layout ) { //Settings from customizer
  		if(($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_settings['edge_sidebar_layout_options'] != 'fullwidth')){ ?>
 
- <div id="primary">
+ <!-- <div id="primary"> -->
+ <!-- If sidebar is added, use "primary" -->
  <?php }
  	}else{ // for page/ post
  		if(($layout != 'no-sidebar') && ($layout != 'full-width')){ ?>
- <div id="primary">
+ <!-- <div id="primary"> -->
  	<?php }
  	}?>
  	<main id="main" class="site-main clearfix">
+  <section id="single-blog">
  	<?php global $edge_settings;
  	if( have_posts() ) {
  		while( have_posts() ) {
@@ -119,12 +121,14 @@
  	<?php
  	if( 'default' == $layout ) { //Settings from customizer
  		if(($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_settings['edge_sidebar_layout_options'] != 'fullwidth')): ?>
- </div> <!-- #primary -->
+ <!-- </div>--> <!-- #primary -->
  <?php endif;
  }else{ // for page/post
  	if(($layout != 'no-sidebar') && ($layout != 'full-width')){
- 		echo '</div><!-- #primary -->';
+ 	// 	echo '</div>'<!-- #primary -->';
  	}
- }
- // get_sidebar();
- get_footer(); ?>
+}
+ // get_sidebar(); ?>
+  </div>
+ </div>
+ <?php get_footer(); ?>
