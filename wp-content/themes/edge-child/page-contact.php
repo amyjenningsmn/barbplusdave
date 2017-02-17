@@ -16,13 +16,13 @@ get_header(); ?>
 			<div class="one-column clearfix contact-intro">
 				<div class="contact-frames-wrap">
 					<div class="three-column clearfix">
-						<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/circle1.png" />
+						<img class="tag hide-2" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/cookies.png" />
 					</div>
 					<div class="three-column clearfix">
-						<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/circle1.png" />
+						<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/happyCircleMain.png" />
 					</div>
 					<div class="three-column clearfix">
-						<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/circle1.png" />
+						<img class="tag hide-1" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/smoothies.png" />
 					</div>
 				</div><!--.contact-frames-wrap -->
 				<div class="contact-intro-text">
