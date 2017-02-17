@@ -602,6 +602,10 @@ div.main-info:last-of-type {
 	font-size: 1.1em;
 }
 
+.main-info h4.fp-left {
+	text-align: left;
+}
+
 div.listing-image-wrap {
 	position: relative;
 }

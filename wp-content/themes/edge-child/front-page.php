@@ -100,7 +100,7 @@
 											 <?php } ?>
                 <?php if ($open_house): ?><span class="not-sold"><?php echo $open_house; ?></span><?php endif; ?>
 										 </div>
-										 <h4><?php the_title(); ?></h4>
+										 <h4 class="fp-left"><?php the_title(); ?></h4>
 									 </div><!--.main-info -->
 								 <?php endwhile; // end of the loop. ?>
 								 <?php wp_reset_query(); ?>
