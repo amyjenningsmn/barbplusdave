@@ -90,13 +90,17 @@
 								 <img src="<?php echo $main_listing_image; ?>" />
 								 <?php if( $status == 'coming_soon' ) { ?>
 									 <span class="not-sold">Coming Soon</span>
-									 <?php } ?>
-									 <?php if( $status == 'sale_pending' ) { ?>
-										 <span class="not-sold">Sale Pending</span>
-										 <?php } ?>
-										 <?php if( $status == 'sold' ) { ?>
-											 <span class="sold">Sold</span>
-											 <?php } ?>
+								 <?php } ?>
+                 <?php if (( $status == 'active') && ($open_house == null)) { ?>
+                    <span class="not-sold">Active</span>
+										<!-- <span class="green">Active</span> -->
+								 <?php } ?>
+								 <?php if( $status == 'sale_pending' ) { ?>
+										<span class="not-sold">Sale Pending</span>
+								 <?php } ?>
+								 <?php if( $status == 'sold' ) { ?>
+										<span class="sold">Sold</span>
+								 <?php } ?>
 											 <?php } ?>
                 <?php if ($open_house): ?><span class="not-sold"><?php echo $open_house; ?></span><?php endif; ?>
 										 </div>

@@ -41,6 +41,10 @@ get_header(); ?>
  								 <?php if( $status == 'coming_soon' ) { ?>
  									 <span class="not-sold">Coming Soon</span>
  								 <?php } ?>
+								 <?php if (( $status == 'active') && ($open_house == null)) { ?>
+										<span class="not-sold">Active</span>
+										<!-- <span class="green">Active</span> -->
+								 <?php } ?>
  								 <?php if( $status == 'sale_pending' ) { ?>
  									 <span class="not-sold">Sale Pending</span>
  								 <?php } ?>
