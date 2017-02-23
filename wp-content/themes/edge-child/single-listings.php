@@ -97,6 +97,10 @@
          </ul>
        </div>
      </div>
+     <ul class="default-wp-page clearfix">
+       <li class="next"> <?php previous_post_link( '%link', 'Next Listing <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'edge' ) . '</span>' ); ?> </li>
+       <li class="previous"> <?php next_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'edge' ) . '</span> Previous Listing' ); ?> </li>
+     </ul>
       <?php endwhile; // end of the loop. ?>
       </section>
  		</div><!-- .one-column -->

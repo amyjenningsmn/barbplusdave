@@ -46,18 +46,9 @@
             <h1><?php the_title(); ?></h1>
           </div>
           <div class="entry-meta">
- 						<?php
- 						$format = get_post_format();
- 						if ( current_theme_supports( 'post-formats', $format ) ) {
- 							printf( '<span class="entry-format">%1$s<a href="%2$s">%3$s</a></span>',
- 								sprintf( ''),
- 								esc_url( get_post_format_link( $format ) ),
- 								get_post_format_string( $format )
- 							);
- 						} ?>
- 						<span class="author vcard"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" title="<?php the_author(); ?>"><i class="fa fa-user"></i>
- 						<?php the_author(); ?> </a></span> <span class="posted-on"><a title="<?php echo esc_attr( get_the_time() ); ?>" href="<?php the_permalink(); ?>"><i class="fa fa-calendar"></i>
- 						<?php the_time( get_option( 'date_format' ) ); ?> </a></span>
+
+ 						<span class="bpd-post-date"><i class="fa fa-calendar"></i>
+ 						<?php the_time( get_option( 'date_format' ) ); ?></span>
  					</div> <!-- end .entry-meta -->
  					<?php } ?>
  				</header> <!-- end .entry-header -->

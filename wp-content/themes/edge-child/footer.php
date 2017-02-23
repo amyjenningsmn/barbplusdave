@@ -31,7 +31,7 @@ endif;
 						<img class="lar" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/lar.png" />
 						<h3>Barb Palmer</h3>
 						<h4>Realtor</h4>
-						<p>4316 Upton Ave S, Suite 300</p>
+						<p>4316 Upton Ave S, Suite 200</p>
 						<p>Minneapolis, MN 55410</p></br>
 						<img class="mls" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mls.png" />
 						<img class="equal" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/equalHousing.png" />

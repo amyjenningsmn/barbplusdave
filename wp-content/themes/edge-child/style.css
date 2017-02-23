@@ -28,6 +28,7 @@
 # Blog - Archive Page
 # Single Blog Posts
 # Contact Page
+# 404 Page
 
 */
 
@@ -192,6 +193,7 @@ h1, h2, h3 {
 .contact-info h4 {
 	font-size: 1.2em;
 	line-height: 5px;
+	text-align: left;
 }
 
 .mls {
@@ -631,23 +633,6 @@ z-index: 2;
 box-sizing: border-box;
 }
 
-div.listing-image-wrap span.green {
-display: block;
-position: absolute;
-width: 100%;
-letter-spacing: 1.5px;
-color: #fff;
-left: 0;
-top: 0;
-background-color: #4D8364;
-opacity: 0.8;
-padding: 1em;
-font-weight: 700;
-z-index: 2;
--webkit-box-sizing: border-box;
-box-sizing: border-box;
-}
-
 div.listing-image-wrap span.sold {
 display: block;
 position: absolute;
@@ -935,6 +920,10 @@ div.blog-main-info p {
 	padding-top: 10%;
 }
 
+#blog .entry-meta {
+	display: none;
+}
+
 .cat-links, .tag-links{
 	display: none;
 }
@@ -1071,6 +1060,14 @@ div.listing-single-info > div {
 	}
 }
 
+span.bpd-post-date{
+	color: #454951;
+}
+
+span.bpd-post-date:hover{
+	color: #454951;
+}
+
 
 /* #Contact Page =================== */
 
@@ -1106,4 +1103,16 @@ div.listing-single-info > div {
 	.contact-intro-info {
 		padding: 0;
 	}
+}
+
+/* #404 Page =================== */
+
+.error-404 .page-header {
+	background-color: inherit;
+}
+
+.error-404 .page-header h2.page-title{
+	float: none;
+	text-align: center;
+	padding-top: 20px;
 }
