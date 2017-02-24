@@ -18,7 +18,7 @@ get_header(); ?>
 			<main id="listings">
 			<div class="main-heading">
 				<img class="picnic" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/picnicCircle.png" />
- 					 <h1>Our Listings</h1>
+ 					 <h1>Our Listings & a Picnic<span class="asterisk">*</span></h1>
  			 </div>
 				 <?php
 					if( have_posts() ) {

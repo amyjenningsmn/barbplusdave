@@ -836,7 +836,11 @@ div.blog-main-info p {
 	position: absolute;
 	width: 12%;
 	top: 22px;
-	left: 190px;
+	left: 339px;
+}
+
+.asterisk {
+	font-size: 1.3em;
 }
 
 .listing-details-wrap {
@@ -886,15 +890,20 @@ div.blog-main-info p {
 @media only screen and (max-width: 767px) {
 	.picnic {
 		width: 22%;
-		top: 39px;
-		left: 187px;
+		top: 43px;
+		left: 336px;
 	}
 }
 @media only screen and (max-width: 480px) {
 	.picnic {
 		width: 29%;
-		top: 47px;
-		left: 187px;
+		top: 104px;
+		left: 114px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.picnic {
+		top: 102px;
 	}
 }
 

@@ -9,10 +9,10 @@ function edge_enqueue_styles() {
 
 
 /**************** Add test.js file and create dependency ***************************/
-function edge_child_enqueue_scripts() {
-wp_enqueue_script( 'test', get_stylesheet_directory_uri() . '/js/test.js', array('jquery'), '1.0', true );
-}
-add_action( 'wp_enqueue_scripts', 'edge_child_enqueue_scripts' );
+// function edge_child_enqueue_scripts() {
+// wp_enqueue_script( 'test', get_stylesheet_directory_uri() . '/js/test.js', array('jquery'), '1.0', true );
+// }
+// add_action( 'wp_enqueue_scripts', 'edge_child_enqueue_scripts' );
 
 
 /************ Add custom fonts - overwrite - from edge-functions.php ********************/
@@ -47,7 +47,6 @@ function create_custom_post_types() {
                 'name' => __( 'Blog' ),
                 'singular_name' => __( 'Blog Post' )
             ),
-						// 'taxonomies' => array( 'category' ),
             'public' => true,
             'has_archive' => true,
             'rewrite' => array( 'slug' => 'blog' ),
@@ -62,9 +61,6 @@ function custom_excerpt_length( $length ) {
 	return 20;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-
-
-// Need to add .social-link override functions here (from edge-functions.php and social-icons.php.  Good article for how to do that: https://code.tutsplus.com/tutorials/a-guide-to-overriding-parent-theme-functions-in-your-child-theme--cms-22623)
 
 
 
