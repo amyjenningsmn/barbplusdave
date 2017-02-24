@@ -134,7 +134,7 @@ h1, h2, h3 {
 }
 
 .contact, .newsletter {
-	background-image: url("../edge-child/assets/images/rectangle2copy.png");
+	background-image: url("../edge-child/assets/images/rectangleGrey.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	text-align: left;
@@ -143,7 +143,7 @@ h1, h2, h3 {
 }
 
 .phone {
-	background-image: url("../edge-child/assets/images/rectangle1copycopy.png");
+	background-image: url("../edge-child/assets/images/rectangleRed.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	text-align: left;

@@ -88,14 +88,8 @@ get_header(); ?>
 					</div>
 				</div> <!--.one-column-->
 				<div class="pdf-buttons clearfix">
-          <!-- Below is production site -->
-          <button class="btn-default us-btn-left"><a href="http://barbplusdave.wpengine.com/wp-content/uploads/2017/02/BarbPlusDaveBuyersGuide-1.pdf">View our Buyers Guide</a></button>
-          <!-- Below is local site -->
-					<!-- <button class="btn-default us-btn-left"><a href="http://localhost:8888/barbplusdave/wp-content/uploads/2017/02/BarbPlusDaveBuyersGuide.pdf">View our Buyers Guide</a></button> -->
-          <!-- Below is production site -->
-          <button class="btn-default us-btn-right"><a href="http://barbplusdave.wpengine.com/wp-content/uploads/2017/02/BarbPlusDaveSellersGuide-1.pdf">View our Sellers Guide</a></button>
-          <!-- Below is for local site -->
-					<!-- <button class="btn-default us-btn-right"><a href="http://localhost:8888/barbplusdave/wp-content/uploads/2017/02/BarbPlusDaveSellersGuide.pdf">View our Sellers Guide</a></button> -->
+          <button class="btn-default us-btn-left"><a href="http://barbplusdave.com/wp-content/uploads/2017/02/BarbPlusDaveBuyersGuide-1.pdf">View our Buyers Guide</a></button>
+          <button class="btn-default us-btn-right"><a href="http://barbplusdave.com/wp-content/uploads/2017/02/BarbPlusDaveSellersGuide-1.pdf">View our Sellers Guide</a></button>
 				</div>
 			</div> <!--.colored-background-->
 	  </section>
@@ -105,7 +99,6 @@ get_header(); ?>
 			<div class="one-column clearfix word-street">
 				<div class="ws-wrap">
 					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/wordOnTheStreet.png" />
-          <!-- <?php echo do_shortcode( '[sp_testimonials design="design-3"]' ); ?> -->
           <?php echo do_shortcode( '[sp_testimonials_slider design="design-3" autoplay="true" autoplay_interval="11000" speed="1000"]' ); ?>
         </div>
 			</div> <!--.one-column -->

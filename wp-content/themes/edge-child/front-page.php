@@ -56,7 +56,7 @@
 				 <h3>Connected</h3>
 				 <p class="info-text last">Knowing we're all Connected and welcoming our diversity, grateful to give back any way we can.</p>
 			 </div>
-      <button class="btn-default us-btn"><a href="http://barbplusdave.wpengine.com/about/">Get to Know Us!</a></button>
+      <button class="btn-default us-btn"><a href="http://barbplusdave.com/about/">Get to Know Us!</a></button>
      </div><!--.one-column -->
 	 </div><!--.colored-background -->
  </section>
@@ -65,7 +65,7 @@
 		 <section class="listings-home">
 			 <div class="three-column entry-content clearfix">
 				 <div class="main-heading">
-					 <h2>Our Listings<a class="more" href="http://barbplusdave.wpengine.com/listings/">see all <span>&rsaquo;</span></a></h2>
+					 <h2>Our Listings<a class="more" href="http://barbplusdave.com/listings/">see all <span>&rsaquo;</span></a></h2>
 				 </div>
 				 <?php query_posts('posts_per_page=2&post_type=listings'); ?>
 				 <?php while ( have_posts() ) : the_post();
@@ -109,7 +109,7 @@
 						 <section class="blog-home">
 							 <div class="two-column home-blog entry-content clearfix">
 								 <div class="main-heading what-up">
-									 <h2>What are we up to now?<a class="more" href="http://barbplusdave.wpengine.com/blog/">more <span>&rsaquo;</span></a></h2>
+									 <h2>What are we up to now?<a class="more" href="http://barbplusdave.com/blog/">more <span>&rsaquo;</span></a></h2>
 								 </div>
 								 <?php query_posts('posts_per_page=2&post_type=blog'); ?>
 								 <?php while ( have_posts() ) : the_post();
