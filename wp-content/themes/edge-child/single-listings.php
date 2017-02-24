@@ -57,8 +57,9 @@
      </div>
      <div class="listing-images">
           <?php echo $gallery; ?>
-          <?php if ($embed_link): ?>
-            <span class="virtual-listing"><?php echo $embed_link; ?></span><?php endif; ?>
+            <?php if ($embed_link): ?>
+              <div class="virtual-listing clearfix"><?php echo $embed_link; ?></div>
+            <?php endif; ?>
           <div class="listing-buttons">
             <?php if ($virtual_tour_link): ?>
               <button class="btn-default btn-listing"><a href="<?php echo $virtual_tour_link; ?>" target="_blank">Click to see the Virtual Tour</a></button>
