@@ -1096,6 +1096,9 @@ span.bpd-post-date:hover{
 	line-height: 1.1em;
 }
 
+div.wpcf7-mail-sent-ok {
+	border: 2px solid #454951;
+}
 @media only screen and (max-width: 1023px) {
 	.hide-1 {
 		display: none;
