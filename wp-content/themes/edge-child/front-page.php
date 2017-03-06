@@ -17,7 +17,7 @@
 		<section id="welcome">
 			<div class="one-column clearfix welcome">
 				<div class="bpd-wrap clearfix">
-					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/larbpd.png" />
+					<img class="tag" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/larbpd2.png" />
 				</div>
 				<div class="bpd-welcome-wrap">
 					<h3>Barb Palmer</h3>
